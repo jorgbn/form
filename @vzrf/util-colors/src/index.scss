@@ -1,0 +1,14 @@
+@import "~@vzrf/default/src/index";
+@import "config";
+
+@each $color, $value in $Theme-colors {
+  .u-color#{$color} {
+    color: $value !important;
+  }
+}
+
+@each $color, $value in $Theme-colors {
+  .u-colorBackground#{$color} {
+    background-color: $value !important;
+  }
+}

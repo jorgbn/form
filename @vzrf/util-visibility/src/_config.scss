@@ -1,0 +1,13 @@
+$Visibility-display: (showFor, hideFor) !default;
+$Visibility-visibility: (showFor: inherit, hideFor: none) !default;
+$Visibility-initial: (showFor: none, hideFor: inherit) !default;
+$Visibility-range: (Up, Down, Only) !default;
+$Visibility-breakpoint: (ExtraSmall, Small, Medium, Large, ExtraLarge) !default;
+
+$Visibility-breakpoint-map: (
+  ExtraSmall: map-get($Theme-breakpoints, xs),
+  Small: map-get($Theme-breakpoints, sm),
+  Medium: map-get($Theme-breakpoints, md),
+  Large: map-get($Theme-breakpoints, lg),
+  ExtraLarge: map-get($Theme-breakpoints, xl),
+) !default;

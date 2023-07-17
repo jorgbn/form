@@ -1,0 +1,103 @@
+// Styles for text based form elements
+.Form-input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  vertical-align: top;
+
+  margin: 0 calculateRem(4) 0.5ch 0;
+  padding: 1.5ch;
+
+  background-color: $Input-backgroundColor;
+  border-radius: $Input-borderRadius;
+  color: $Input-textColor;
+
+  font-size: $Input-fontSize;
+  font-weight: $Input-fontWeight;
+  line-height: $Input-lineHeight;
+  transition: border 250ms;
+  border-top: calculateRem(1) solid $Input-borderColor--alt;
+  border-right: calculateRem(1) solid $Input-borderColor--alt;
+  border-bottom: calculateRem(2) solid $Input-borderColor;
+  border-left: calculateRem(1) solid $Input-borderColor--alt;
+
+  height: calculateRem(42);
+  width: calculateRem(135);
+
+  // Placeholders
+  @include placeholder {
+    color: $Input-placeholderColor;
+  }
+
+  // Disabled
+  &:disabled,
+  &.is-disabled {
+    border-color: $Form-color--disabled;
+  }
+
+  &:focus,
+  &.is-focused {
+    transition: border 250ms;
+    outline: none;
+    border-top: calculateRem(1) solid $black;
+    border-left: calculateRem(1) solid $black;
+    border-right: calculateRem(1) solid $black;
+  }
+
+  &.is-disabled,
+  &[disabled] {
+    pointer-events: none;
+    border-color: $coolGray3;
+    border-bottom: calculateRem(1) solid $coolGray3;
+  }
+
+  &.is-locked,
+  &.is-locked[disabled] {
+    pointer-events: none;
+    color: $black;
+  }
+
+  @each $name, $color in $Form-themes {
+    &.is-#{$name} {
+      border-color: $color;
+      border-bottom-width: calculateRem(4);
+
+      &[type="date"],
+      &[type="datetime-local"],
+      &[type="email"],
+      &[type="month"],
+      &[type="number"],
+      &[type="password"],
+      &[type="search"],
+      &[type="tel"],
+      &[type="text"],
+      &[type="time"],
+      &[type="url"],
+      &[type="week"] {
+        border-color: $color;
+      }
+
+      &:focus,
+      &.is-focused {
+        transition: border 250ms;
+        outline: none;
+        border-top: calculateRem(1) solid $black;
+        border-left: calculateRem(1) solid $black;
+        border-right: calculateRem(1) solid $black;
+      }
+    }
+  }
+}
+
+textarea.Form-input {
+  padding: 1.5ch;
+  width: 100%;
+  @each $name, $color in $Form-themes {
+    &.is-#{$name} {
+      border-color: $color;
+      border-bottom-width: calculateRem(4);
+    }
+  }
+}

@@ -1,0 +1,203 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+.u-colorPrimary {
+  color: #000000 !important;
+}
+
+.u-colorSecondary {
+  color: #ffffff !important;
+}
+
+.u-colorAccent {
+  color: #d52b1e !important;
+}
+
+.u-colorError {
+  color: #ed7000 !important;
+}
+
+.u-colorWarning {
+  color: #ffbc3d !important;
+}
+
+.u-colorSuccess {
+  color: #00ac3e !important;
+}
+
+.u-colorInfo {
+  color: #0088ce !important;
+}
+
+.u-colorError--66 {
+  color: #F3A157 !important;
+}
+
+.u-colorWarning--66 {
+  color: #FFD37F !important;
+}
+
+.u-colorSuccess--66 {
+  color: #57C880 !important;
+}
+
+.u-colorInfo--66 {
+  color: #57B1DF !important;
+}
+
+.u-colorError--33 {
+  color: #F9D0AB !important;
+}
+
+.u-colorWarning--33 {
+  color: #FFE9BF !important;
+}
+
+.u-colorSuccess--33 {
+  color: #ABE4BF !important;
+}
+
+.u-colorInfo--33 {
+  color: #ABD8EF !important;
+}
+
+.u-colorGray {
+  color: #747676 !important;
+}
+
+.u-colorGray--1 {
+  color: #f6f6f6 !important;
+}
+
+.u-colorGray--3 {
+  color: #d8dada !important;
+}
+
+.u-colorGray--10 {
+  color: #333333 !important;
+}
+
+.u-colorBackgroundPrimary {
+  background-color: #000000 !important;
+}
+
+.u-colorBackgroundSecondary {
+  background-color: #ffffff !important;
+}
+
+.u-colorBackgroundAccent {
+  background-color: #d52b1e !important;
+}
+
+.u-colorBackgroundError {
+  background-color: #ed7000 !important;
+}
+
+.u-colorBackgroundWarning {
+  background-color: #ffbc3d !important;
+}
+
+.u-colorBackgroundSuccess {
+  background-color: #00ac3e !important;
+}
+
+.u-colorBackgroundInfo {
+  background-color: #0088ce !important;
+}
+
+.u-colorBackgroundError--66 {
+  background-color: #F3A157 !important;
+}
+
+.u-colorBackgroundWarning--66 {
+  background-color: #FFD37F !important;
+}
+
+.u-colorBackgroundSuccess--66 {
+  background-color: #57C880 !important;
+}
+
+.u-colorBackgroundInfo--66 {
+  background-color: #57B1DF !important;
+}
+
+.u-colorBackgroundError--33 {
+  background-color: #F9D0AB !important;
+}
+
+.u-colorBackgroundWarning--33 {
+  background-color: #FFE9BF !important;
+}
+
+.u-colorBackgroundSuccess--33 {
+  background-color: #ABE4BF !important;
+}
+
+.u-colorBackgroundInfo--33 {
+  background-color: #ABD8EF !important;
+}
+
+.u-colorBackgroundGray {
+  background-color: #747676 !important;
+}
+
+.u-colorBackgroundGray--1 {
+  background-color: #f6f6f6 !important;
+}
+
+.u-colorBackgroundGray--3 {
+  background-color: #d8dada !important;
+}
+
+.u-colorBackgroundGray--10 {
+  background-color: #333333 !important;
+}

@@ -1,0 +1,16 @@
+/**
+  Swiper Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - General
+**/
+
+// Import
+
+// General
+$Swiper-backgroundColor: #ffffff !default;
+$Swiper-height: calculateRem(450) !default;
+$Swiper-border: $Theme-border !default;

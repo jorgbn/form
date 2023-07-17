@@ -1,0 +1,38 @@
+/**
+  Alerts Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+  - Success
+  - Info
+  - Warning
+  - Error
+  - Alert close
+**/
+
+// Imports
+
+$Alert-background: $Theme-info !default;
+$Alert-textColor: $Theme-textColor--info !default;
+
+// Success
+$Alert-background--success: $Theme-success !default;
+$Alert-textColor--success: $Theme-textColor--success !default;
+
+// Info
+$Alert-background--info: $Theme-info !default;
+$Alert-textColor--info: $Theme-textColor--info !default;
+
+// Warning
+$Alert-background--warning: $Theme-warning !default;
+$Alert-textColor--warning: $Theme-textColor--warning !default;
+
+// Error
+$Alert-background--error: $Theme-error !default;
+$Alert-textColor--error: $Theme-textColor--error !default;
+
+// Alert Close
+$AlertClose-content: '✕' !default;

@@ -1,0 +1,351 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+.u-showForExtraSmallUp {
+  display: none !important;
+}
+
+@media screen and (min-width: 320px) {
+  .u-showForExtraSmallUp {
+    display: inherit !important;
+  }
+}
+
+.u-showForSmallUp {
+  display: none !important;
+}
+
+@media screen and (min-width: 544px) {
+  .u-showForSmallUp {
+    display: inherit !important;
+  }
+}
+
+.u-showForMediumUp {
+  display: none !important;
+}
+
+@media screen and (min-width: 768px) {
+  .u-showForMediumUp {
+    display: inherit !important;
+  }
+}
+
+.u-showForLargeUp {
+  display: none !important;
+}
+
+@media screen and (min-width: 991px) {
+  .u-showForLargeUp {
+    display: inherit !important;
+  }
+}
+
+.u-showForExtraLargeUp {
+  display: none !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .u-showForExtraLargeUp {
+    display: inherit !important;
+  }
+}
+
+.u-showForExtraSmallDown {
+  display: none !important;
+}
+
+@media screen and (max-width: 320px) {
+  .u-showForExtraSmallDown {
+    display: inherit !important;
+  }
+}
+
+.u-showForSmallDown {
+  display: none !important;
+}
+
+@media screen and (max-width: 544px) {
+  .u-showForSmallDown {
+    display: inherit !important;
+  }
+}
+
+.u-showForMediumDown {
+  display: none !important;
+}
+
+@media screen and (max-width: 768px) {
+  .u-showForMediumDown {
+    display: inherit !important;
+  }
+}
+
+.u-showForLargeDown {
+  display: none !important;
+}
+
+@media screen and (max-width: 991px) {
+  .u-showForLargeDown {
+    display: inherit !important;
+  }
+}
+
+.u-showForExtraLargeDown {
+  display: none !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .u-showForExtraLargeDown {
+    display: inherit !important;
+  }
+}
+
+.u-showForExtraSmallOnly {
+  display: none !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .u-showForExtraSmallOnly {
+    display: inherit !important;
+  }
+}
+
+.u-showForSmallOnly {
+  display: none !important;
+}
+
+@media screen and (min-width: 544px) and (max-width: 768px) {
+  .u-showForSmallOnly {
+    display: inherit !important;
+  }
+}
+
+.u-showForMediumOnly {
+  display: none !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .u-showForMediumOnly {
+    display: inherit !important;
+  }
+}
+
+.u-showForLargeOnly {
+  display: none !important;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .u-showForLargeOnly {
+    display: inherit !important;
+  }
+}
+
+.u-showForExtraLargeOnly {
+  display: none !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .u-showForExtraLargeOnly {
+    display: inherit !important;
+  }
+}
+
+.u-hideForExtraSmallUp {
+  display: inherit !important;
+}
+
+@media screen and (min-width: 320px) {
+  .u-hideForExtraSmallUp {
+    display: none !important;
+  }
+}
+
+.u-hideForSmallUp {
+  display: inherit !important;
+}
+
+@media screen and (min-width: 544px) {
+  .u-hideForSmallUp {
+    display: none !important;
+  }
+}
+
+.u-hideForMediumUp {
+  display: inherit !important;
+}
+
+@media screen and (min-width: 768px) {
+  .u-hideForMediumUp {
+    display: none !important;
+  }
+}
+
+.u-hideForLargeUp {
+  display: inherit !important;
+}
+
+@media screen and (min-width: 991px) {
+  .u-hideForLargeUp {
+    display: none !important;
+  }
+}
+
+.u-hideForExtraLargeUp {
+  display: inherit !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .u-hideForExtraLargeUp {
+    display: none !important;
+  }
+}
+
+.u-hideForExtraSmallDown {
+  display: inherit !important;
+}
+
+@media screen and (max-width: 320px) {
+  .u-hideForExtraSmallDown {
+    display: none !important;
+  }
+}
+
+.u-hideForSmallDown {
+  display: inherit !important;
+}
+
+@media screen and (max-width: 544px) {
+  .u-hideForSmallDown {
+    display: none !important;
+  }
+}
+
+.u-hideForMediumDown {
+  display: inherit !important;
+}
+
+@media screen and (max-width: 768px) {
+  .u-hideForMediumDown {
+    display: none !important;
+  }
+}
+
+.u-hideForLargeDown {
+  display: inherit !important;
+}
+
+@media screen and (max-width: 991px) {
+  .u-hideForLargeDown {
+    display: none !important;
+  }
+}
+
+.u-hideForExtraLargeDown {
+  display: inherit !important;
+}
+
+@media screen and (max-width: 1200px) {
+  .u-hideForExtraLargeDown {
+    display: none !important;
+  }
+}
+
+.u-hideForExtraSmallOnly {
+  display: inherit !important;
+}
+
+@media screen and (min-width: 320px) and (max-width: 544px) {
+  .u-hideForExtraSmallOnly {
+    display: none !important;
+  }
+}
+
+.u-hideForSmallOnly {
+  display: inherit !important;
+}
+
+@media screen and (min-width: 544px) and (max-width: 768px) {
+  .u-hideForSmallOnly {
+    display: none !important;
+  }
+}
+
+.u-hideForMediumOnly {
+  display: inherit !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .u-hideForMediumOnly {
+    display: none !important;
+  }
+}
+
+.u-hideForLargeOnly {
+  display: inherit !important;
+}
+
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .u-hideForLargeOnly {
+    display: none !important;
+  }
+}
+
+.u-hideForExtraLargeOnly {
+  display: inherit !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .u-hideForExtraLargeOnly {
+    display: none !important;
+  }
+}

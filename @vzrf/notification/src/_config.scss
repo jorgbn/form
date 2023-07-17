@@ -1,0 +1,37 @@
+/**
+  Notifications Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - General
+  - Success
+  - Info
+  - Warning
+  - Error
+**/
+
+// Import
+
+// General
+$Notification-background: $Theme-info !default;
+$Notification-textColor:  $Theme-textColor--info !default;
+$Notification-content--close: '✕' !default;
+$Notification-fontSize--close: calculateRem(14) !default;
+
+// Success
+$Notification-textColor--success: $Theme-textColor--success !default;
+$Notification-background--success: $Theme-success !default;
+
+// Info
+$Notification-textColor--info: $Theme-textColor--info !default;
+$Notification-background--info: $Theme-info !default;
+
+// Warning
+$Notification-textColor--warning: $Theme-textColor--warning !default;
+$Notification-background--warning: $Theme-warning !default;
+
+// Error
+$Notification-textColor--error: $Theme-textColor--error !default;
+$Notification-background--error: $Theme-error !default;

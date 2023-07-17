@@ -1,0 +1,79 @@
+@mixin table-base {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  width: 100%;
+  margin-bottom: calculateRem(21);
+  border: calculateRem(1) solid $Table-borderColor;
+
+  th,
+  td {
+    border-collapse: collapse;
+    border-spacing: 0;
+    vertical-align: center;
+  }
+
+  th {
+    padding: calculateRem(14);
+    background-color: $Table-backgroundColor--head;
+    color: $Table-textColor--head;
+    border-right: calculateRem(1) solid $Table-textColor--head;
+    border-bottom: calculateRem(1) solid $Table-textColor--head;
+
+    &:last-of-type {
+      border-right-color: $Table-backgroundColor--head;
+    }
+  }
+
+  td {
+    padding: calculateRem(14);
+    background-color: $Table-backgroundColor--body;
+    color: $Table-textColor--body;
+    border: calculateRem(1) solid $Table-textColor--body;
+  }
+}
+
+@mixin table-hover {
+  tbody {
+    tr:hover {
+      td {
+        background-color: $Table-border--hover;
+      }
+    }
+  }
+}
+
+@mixin table-no-border {
+  border-color: transparent;
+
+  th,
+  td {
+    border-color: transparent;
+  }
+}
+
+@mixin table-striped {
+  tbody {
+    tr:nth-child(2) td {
+      background-color: $Table-border--striped;
+    }
+  }
+}
+
+table,
+.Table {
+  @include table-base;
+}
+
+.Table--hover {
+  @include table-hover;
+}
+
+.Table--noBorder {
+  @include table-no-border;
+}
+
+.Table--striped {
+  @include table-striped;
+}
+

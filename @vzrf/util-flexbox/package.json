@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/util-flexbox@^3.0.9",
+  "_id": "@vzrf/util-flexbox@3.0.9",
+  "_inBundle": false,
+  "_integrity": "sha1-20dvjkc2Eriw82JWEb5e+vhqLLI=",
+  "_location": "/@vzrf/util-flexbox",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/util-flexbox@^3.0.9",
+    "name": "@vzrf/util-flexbox",
+    "escapedName": "@vzrf%2futil-flexbox",
+    "scope": "@vzrf",
+    "rawSpec": "^3.0.9",
+    "saveSpec": null,
+    "fetchSpec": "^3.0.9"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/util-flexbox/-/@vzrf/util-flexbox-3.0.9.tgz",
+  "_shasum": "db476f8e473612b8b0f3625611be5efaf86a2cb2",
+  "_spec": "@vzrf/util-flexbox@^3.0.9",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Flexbox Utility",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Flexbox Utility"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/util-flexbox",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "3.0.9"
+}

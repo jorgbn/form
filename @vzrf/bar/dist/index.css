@@ -1,0 +1,90 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Bars Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+
+
+**/
+.Bar {
+  position: relative;
+  padding-top: 1.3125rem;
+  padding-bottom: 0.875rem;
+  margin-top: 1.3125rem;
+  border-top: 0.25rem solid #000000;
+}
+
+.Bar.Bar--primary {
+  border-top: 0.25rem solid #000000;
+}
+
+.Bar.Bar--secondary {
+  border-top: 0.0625rem solid #000000;
+}
+
+.Bar.Bar--tertiary {
+  border-top: 0.0625rem solid #d8dada;
+}
+
+.Bar.Bar--noMargin {
+  margin: 0;
+}
+
+.Bar.is-active {
+  border-color: #d52b1e;
+}

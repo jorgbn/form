@@ -1,0 +1,24 @@
+/**
+  Tabs Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - Tab
+  - Tab List
+  - Tab Line
+
+**/
+
+// Tab
+$Tab-color--active: $red;
+$Tab-color--hover: #747676;
+$Tab-fontSize: calculateRem(20) !default;
+$Tab-textColor: #000000 !default;
+$Tab-textColor--hover: $red !default;
+$Tab-textColor--active: $red !default;
+
+// Tab Line
+$TabLine-backgroundColor: #aaaaaa !default;
+$TabLine-backgroundColor--active: $red !default;

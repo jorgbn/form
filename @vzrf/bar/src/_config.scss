@@ -1,0 +1,21 @@
+/**
+  Bars Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+
+
+**/
+
+// Imports
+
+// General
+$Bar-color: $black !default;
+$Bar-color--secondary: $coolGray3 !default;
+$Bar-color--active: $Theme-accent !default;
+$Bar-border: calculateRem(4) solid $Bar-color !default;
+$Bar-border--secondary: calculateRem(1) solid $Bar-color !default;
+$Bar-border--tertiary: calculateRem(1) solid $Bar-color--secondary !default;

@@ -1,0 +1,258 @@
+/**
+* Typography
+*
+* Reset Typography
+* Base Typography
+* Headers
+* Core Typography
+* Measure
+* Lists
+* Media Query
+*
+*/
+
+// Reset Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+blockquote {
+  margin: 0;
+  padding: 0;
+}
+
+// Base Typography
+html {
+  font-family: $Typography-fontFamily--body;
+  font-size: $Typography-remSize;
+  font-weight: normal;
+  font-style: normal;
+  color: $Typography-fontColor;
+  line-height: $Typography-lineHeight;
+}
+
+// Body Typography
+body {
+  font-size: $Typography-fontSize;
+}
+
+// Headers
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $Typography-fontFamily--header;
+  margin-top: 0;
+  margin-bottom: 0.6em;
+}
+
+@each $heading, $map in $Typography-headings {
+  #{$heading},
+  .#{$heading} {
+    font-size: map-get($map, 'mobile-size');
+    font-weight: map-get($map, 'font-weight');
+    line-height: map-get($map, 'mobile-line-height');
+
+    @if (map-has-key($map, 'font-family')) {
+      font-family: map-get($map, 'font-family');
+    }
+
+    @if (map-has-key($map, 'line-height')) {
+      line-height: map-get($map, 'line-height');
+    }
+  }
+}
+
+// Core Typography
+p {
+  margin-bottom: calculateRem(14);
+}
+
+a,
+.Link {
+  color: $TypographyLink-fontColor;
+  text-decoration: $TypographyLink-textDecoration;
+  transition: $TypographyLink-transition;
+
+  &:hover,
+  &.is-hover {
+    color: $TypographyLink-fontColor--hover;
+  }
+
+  &:active,
+  &.is-active {
+    color: $TypographyLink-fontColor--active;
+  }
+}
+
+blockquote {
+  margin: calculateRem(14 0);
+  padding: calculateRem(0 20 0 16);
+  line-height: 1.625;
+  border-left: calculateRem(4) solid $TypographyBlockquote-borderColor;
+  color: $TypographyBlockquote-fontColor;
+}
+
+hr {
+  margin-top: $TypographyHr-margin;
+  margin-bottom: $TypographyHr-margin;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  border-top: $TypographyHr-borderTop--primary;
+
+  &.Hr--primary {
+    border-top: $TypographyHr-borderTop--primary;
+  }
+  &.Hr--secondary {
+    border-top: $TypographyHr-borderTop--secondary;
+  }
+  &.Hr--tertiary {
+    border-top: $TypographyHr-borderTop--tertiary;
+  }
+}
+
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+
+small {
+  font-size: 80%;
+  line-height: inherit;
+}
+
+pre,
+code,
+kbd {
+  font-family: $Typography-monospace;
+  font-size: 0.9em;
+  line-height: 1;
+}
+
+kbd {
+  background: #747676;
+  border-radius: 0;
+  color: #ffffff;
+  display: inline-block;
+  font-size: calculateRem(12.6);
+  line-height: 1;
+  padding: calculateRem(4) calculateRem(6);
+  vertical-align: baseline;
+}
+
+mark {
+  background-color: lighten(#ffbc3d, 20%);
+  padding: calculateRem(2) calculateRem(4);
+  line-height: 1;
+}
+
+strike,
+del {
+  text-decoration: line-through;
+}
+
+u {
+  text-decoration: underline;
+}
+
+cite,
+em,
+var,
+address,
+dfn {
+  font-style: italic;
+}
+
+time {
+  font-family: $Typography-monospace;
+}
+
+// Lists
+.List--reset {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+ul,
+ol,
+dl {
+  margin-bottom: calculateRem(14);
+}
+
+ol,
+ul {
+  padding-left: calculateRem(28);
+  ul,
+  ol {
+    margin-top: calculateRem(7);
+    margin-bottom: calculateRem(7);
+  }
+  li,
+  dt,
+  dd {
+    margin-bottom: calculateRem(7);
+  }
+}
+
+ul {
+  list-style: disc;
+  &.Ul--square {
+    list-style-type: square;
+  }
+  &.Ul--circle {
+    list-style-type: circle;
+  }
+  &.Ul--disc {
+    list-style-type: disc;
+  }
+  &.Ul--no-bullet {
+    margin-left: 0;
+    list-style-type: none;
+  }
+}
+
+dt {
+  margin-bottom: $TypographyDt-marginBottom;
+  font-weight: $TypographyDt-fontWeight;
+  & ~ dt {
+    margin-top: $TypographyDt-marginTop;
+  }
+  & + dt {
+    margin-top: 0;
+  }
+}
+
+dd {
+  margin-bottom: $TypographyDd-marginBottom;
+}
+
+.Typography-inverted {
+  h1, h2, h3, h4, h5, h6, p, a, * {
+    color: $Typography-fontColor--alt;
+  }
+}
+
+@media only screen and (min-width: map-get($Theme-breakpoints, 'md')) {
+  // Headers
+  @each $heading, $map in $Typography-headings {
+    #{$heading},
+    .#{$heading} {
+      font-size: map-get($map, 'desktop-size');
+      line-height: map-get($map, 'desktop-line-height');
+    }
+  }
+}

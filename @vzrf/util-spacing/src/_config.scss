@@ -1,0 +1,13 @@
+$Spacer-type: (margin, padding) !default;
+$Spacer-direction: (All, X, Y, Top, Right, Bottom, Left) !default;
+$Spacer-size: (None, ExtraSmall, Small, Medium, Large, ExtraLarge, Auto) !default;
+
+$Spacer-size-map: (
+  Auto: auto,
+  None: $Theme-spacer--none,
+  ExtraSmall: $Theme-spacer--extraSmall,
+  Small: $Theme-spacer--small,
+  Medium: $Theme-spacer--medium,
+  Large: $Theme-spacer--large,
+  ExtraLarge: $Theme-spacer--extraLarge
+) !default;

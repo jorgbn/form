@@ -1,0 +1,37 @@
+/**
+  Avatars Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+  - Small
+  - Medium
+  - Large
+  - Extra Large
+**/
+
+// Imports
+
+// General
+$Avatar-backgroundColor: $Theme-primary !default;
+$Avatar-textColor: #ffffff !default;
+$Avatar-width: calculateRem(48) !default;
+$Avatar-height: calculateRem(48) !default;
+$Avatar-fontSize: calculateRem(24) !default;
+
+// Small
+$Avatar-width--small: calculateRem(32) !default;
+$Avatar-height--small: calculateRem(32) !default;
+$Avatar-fontSize--small: calculateRem(16) !default;
+
+// Large
+$Avatar-width--large: calculateRem(64) !default;
+$Avatar-height--large: calculateRem(64) !default;
+$Avatar-fontSize--large: calculateRem(32) !default;
+
+// Extra Large
+$Avatar-width--extraLarge: calculateRem(80) !default;
+$Avatar-height--extraLarge: calculateRem(80) !default;
+$Avatar-fontSize--extraLarge: calculateRem(40) !default;

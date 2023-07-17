@@ -1,0 +1,53 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+@import url(//respframework.verizon.com/fonts/verizon-icons/fonts.css);

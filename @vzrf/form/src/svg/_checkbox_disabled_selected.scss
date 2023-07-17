@@ -1,0 +1,5 @@
+@function checkbox_disabled_selected() {
+  @return svg-url(
+    '<svg width="999px" height="999px" viewBox="0 0 999 999" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch --><title>checkbox-selected-disabled</title><desc>Created with Sketch.</desc><defs></defs><g id="checkbox-selected-disabled" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M376.149042,714.326585 L786.255635,274.541107 L805.638479,292.615901 L377.291696,751.961588 L367.348575,742.689478 L367.010738,743.015723 L360.785614,736.569418 L357.908852,733.886794 L358.049442,733.736029 L142.908852,510.951426 L161.973295,492.541107 L376.149042,714.326585 Z M0,0 L999,0 L999,999 L0,999 L0,0 Z M50,50 L50,950 L950,950 L950,50 L50,50 Z" id="Combined-Shape" fill="#DADCDC"></path></g></svg>'
+  )
+}

@@ -1,0 +1,174 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Steps Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - Step
+  - Steps
+  - Step Arrow
+
+**/
+.Steps ol {
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  justify-content: space-between;
+  align-items: stretch;
+  counter-reset: Steps-item;
+}
+
+.Steps li {
+  align-items: center;
+  justify-content: center;
+  height: 2.625rem;
+  width: 100%;
+}
+
+.Steps.Steps--auto .Steps-item .Steps-control::before {
+  counter-increment: Steps-item;
+  content: counter(Steps-item) ". ";
+}
+
+.Steps .Steps-item .Steps-control {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #000000;
+  color: #ffffff;
+  position: relative;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 100%;
+  height: 100%;
+  white-space: nowrap;
+  border-radius: 0;
+  border-top: 0.0625rem solid #000000;
+  border-bottom: 0.0625rem solid #000000;
+  border-right: 0.0625rem solid #000000;
+  border-left: transparent;
+  font-family: inherit;
+  font-weight: normal;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  line-height: 1.25;
+  vertical-align: top;
+}
+
+.Steps .Steps-item .Steps-control:focus {
+  outline: 0.0625rem dashed #747676;
+}
+
+.Steps .Steps-item .Steps-title {
+  display: none;
+}
+
+.Steps .Steps-item.is-active .Steps-title {
+  display: inline;
+}
+
+.Steps .Steps-item.is-active .Steps-control {
+  background-color: #d8dada;
+  color: #000000;
+  border-top: 0.0625rem solid #d8dada;
+  border-bottom: 0.0625rem solid #d8dada;
+  border-right: 0.0625rem solid #d8dada;
+}
+
+.Steps .Steps-item.is-active .Steps-control::after {
+  border-color: transparent transparent transparent #d8dada;
+}
+
+.Steps .Steps-item.is-active ~ .Steps-item .Steps-control {
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 0.0625rem solid #d8dada;
+  border-bottom: 0.0625rem solid #d8dada;
+  border-right: 0.0625rem solid #d8dada;
+}
+
+.Steps .Steps-item.is-active ~ .Steps-item .Steps-control::after {
+  border-color: transparent transparent transparent #ffffff;
+}
+
+@media screen and (min-width: 544px) {
+  .Steps .Steps-item .Steps-title {
+    display: inline;
+  }
+  .Steps .Steps-item .Steps-control::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 1.3125rem 0 1.3125rem 0.875rem;
+    border-color: transparent transparent transparent #000000;
+    right: -0.875rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    z-index: 2;
+  }
+  .Steps .Steps-item.is-active ~ .Steps-item .Steps-control::after {
+    display: none;
+  }
+  .Steps .Steps-item:last-child *::after {
+    content: none;
+  }
+}

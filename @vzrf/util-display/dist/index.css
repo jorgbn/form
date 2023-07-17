@@ -1,0 +1,23 @@
+.u-displayBlock {
+  display: block !important;
+}
+
+.u-displayInline {
+  display: inline !important;
+}
+
+.u-displayFlex {
+  display: flex !important;
+}
+
+.u-displayInlineBlock {
+  display: inline-block !important;
+}
+
+.u-displayTable {
+  display: table !important;
+}
+
+.u-displayTableCell {
+  display: table-cell !important;
+}

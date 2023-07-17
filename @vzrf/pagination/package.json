@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/pagination@^1.0.11",
+  "_id": "@vzrf/pagination@1.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-1fJ5QH4tAYz11am2HvhmFYL8cBM=",
+  "_location": "/@vzrf/pagination",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/pagination@^1.0.11",
+    "name": "@vzrf/pagination",
+    "escapedName": "@vzrf%2fpagination",
+    "scope": "@vzrf",
+    "rawSpec": "^1.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/pagination/-/@vzrf/pagination-1.0.11.tgz",
+  "_shasum": "d5f279407e2d018cf5d5a9b61ef8661582fc7013",
+  "_spec": "@vzrf/pagination@^1.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Pagination - Indicate to the user where they are in the context of other pages, and allow the user to easily jump to other pages from the pagination links.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Pagination"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/pagination",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.11"
+}

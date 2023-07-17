@@ -1,0 +1,60 @@
+{
+  "_from": "@vzrf/form@^3.2.5",
+  "_id": "@vzrf/form@3.2.5",
+  "_inBundle": false,
+  "_integrity": "sha1-9XyYlGnjkav4K7Y70Lp7n64yP+I=",
+  "_location": "/@vzrf/form",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/form@^3.2.5",
+    "name": "@vzrf/form",
+    "escapedName": "@vzrf%2fform",
+    "scope": "@vzrf",
+    "rawSpec": "^3.2.5",
+    "saveSpec": null,
+    "fetchSpec": "^3.2.5"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/form/-/@vzrf/form-3.2.5.tgz",
+  "_shasum": "f57c989469e391abf82bb63bd0ba7b9fae323fe2",
+  "_spec": "@vzrf/form@^3.2.5",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Edward W. Baer"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Styles for form elements.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Form"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/form",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "3.2.5"
+}

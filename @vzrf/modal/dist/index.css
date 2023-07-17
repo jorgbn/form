@@ -1,0 +1,170 @@
+@charset "UTF-8";
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Modal Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - General
+  - Modal Close
+  - Modal Overlay
+
+**/
+@-webkit-keyframes modal-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-9.375rem);
+            transform: translateY(-9.375rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+@keyframes modal-down {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-9.375rem);
+            transform: translateY(-9.375rem);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+}
+
+.Modal-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.Modal-container.is-active {
+  display: flex;
+}
+
+.Modal {
+  position: relative;
+  width: 50%;
+  padding: 0.875rem;
+  z-index: 99;
+  overflow: hidden;
+  display: flex;
+  background-color: #ffffff;
+  -webkit-animation: modal-down 0.4s ease;
+          animation: modal-down 0.4s ease;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+}
+
+.Modal-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.Modal-overlay.is-active {
+  opacity: 1;
+  display: block;
+}
+
+.Modal-close {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  position: absolute;
+  top: 0.875rem;
+  right: 0.875rem;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+}
+
+.Modal-close:hover, .Modal-close:active, .Modal-close:focus {
+  background: transparent;
+  color: inherit;
+}
+
+.Modal-close::after {
+  font-family: inherit;
+  content: "✕";
+  display: inline-block;
+  padding: 0;
+  color: inherit;
+  font-size: 1.125rem;
+  background-color: transparent;
+}
+
+footer.Modal-footer {
+  min-height: 0;
+}
+
+footer.Modal-footer--confirm {
+  display: flex;
+  justify-content: flex-end;
+}

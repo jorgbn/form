@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/progress@^1.0.11",
+  "_id": "@vzrf/progress@1.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-zU2LbcTOgT5xZOUmZofkS8PZtGA=",
+  "_location": "/@vzrf/progress",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/progress@^1.0.11",
+    "name": "@vzrf/progress",
+    "escapedName": "@vzrf%2fprogress",
+    "scope": "@vzrf",
+    "rawSpec": "^1.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/progress/-/@vzrf/progress-1.0.11.tgz",
+  "_shasum": "cd4d8b6dc4ce813e7164e5266687e44bc3d9b460",
+  "_spec": "@vzrf/progress@^1.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Progress - Progress Bars help users identify progression. Give a clear indication of how far along your user is in a process. Progress Bars can be customized with color or inline text.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Notification"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/progress",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.11"
+}

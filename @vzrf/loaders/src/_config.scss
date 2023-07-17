@@ -1,0 +1,21 @@
+/**
+  Loaders Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+
+**/
+
+// Imports
+
+// General
+$Loader-duration: 2s !default;
+$Loader-color: $Theme-primary !default;
+$Loader-height: calculateRem(28) !default;
+$Loader-width: calculateRem(28) !default;
+$Loader-svg: '<svg stroke="#{$Loader-color}" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"><path d="m9 16.9c-4.3 0-7.9-3.5-7.9-7.9s3.6-7.9 7.9-7.9v-1.1c-5 0-9 4-9 9s4 9 9 9 9-4 9-9h-1.1c0 4.3-3.6 7.9-7.9 7.9z"/></svg>';
+$Loader-background: $white !default;
+$Loader-transparency: .7;

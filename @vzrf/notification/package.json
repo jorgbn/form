@@ -1,0 +1,56 @@
+{
+  "_from": "@vzrf/notification@^1.0.14",
+  "_id": "@vzrf/notification@1.0.14",
+  "_inBundle": false,
+  "_integrity": "sha1-TdtmyZorZj1oPa+GiWZdOlxBRxQ=",
+  "_location": "/@vzrf/notification",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/notification@^1.0.14",
+    "name": "@vzrf/notification",
+    "escapedName": "@vzrf%2fnotification",
+    "scope": "@vzrf",
+    "rawSpec": "^1.0.14",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.14"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/notification/-/@vzrf/notification-1.0.14.tgz",
+  "_shasum": "4ddb66c99a2b663d683daf8689665d3a5c414714",
+  "_spec": "@vzrf/notification@^1.0.14",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Notification - Small indicators of actions or status. Notifications notify the users of a status update. You can set a notification with the notification class and then include your modifiers to set color or style.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Notification"
+  ],
+  "license": "UNLICENSED",
+  "name": "@vzrf/notification",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.14"
+}

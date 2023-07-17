@@ -1,0 +1,67 @@
+@mixin button-cta {
+  width: auto;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  padding: 0;
+  margin: calculateRem(0 0 0 14);
+  border: 0;
+  cursor: pointer;
+  background-image: none;
+  background-color: $Button-backgroundColor--cta;
+  text-decoration: none;
+  font-size: calculateRem(18);
+  font-weight: bold;
+  font-style: normal;
+  line-height: 1;
+  color: $Button-textColor--cta;
+  transition: opacity 0.15s ease-in;
+  touch-action: manipulation;
+
+  &:hover {
+    background-color: transparent;
+    color: $Button-textColor--cta;
+    text-decoration: none;
+  }
+
+  &:active,
+  &.is-active {
+    opacity: 0.77;
+    transition: opacity 0.15s ease-out;
+  }
+
+  &.is-disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    color: $Button-backgroundColor--disabled;
+    text-shadow: none;
+    &:hover {
+      background-color: transparent;
+    }
+    &::after {
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 15 24' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath stroke='#{$Button-backgroundColor--disabled}' stroke-width='3' d='M1.607 1l10.606 10.607L1.607 22.213' fill='none' fill-rule='evenodd'/%3E %3C/svg%3E");
+    }
+  }
+
+  &:focus,
+  &.is-focused {
+    text-decoration: underline;
+  }
+
+  &::after {
+    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 15 24' xmlns='http://www.w3.org/2000/svg'%3E %3Cpath stroke='#{$Button-caretTextColor--cta}' stroke-width='3' d='M1.607 1l10.606 10.607L1.607 22.213' fill='none' fill-rule='evenodd'/%3E %3C/svg%3E");
+    content: " ";
+    display: inline-block;
+    width: 0.9em;
+    height: 0.9em;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    margin-left: 1ex;
+    position: relative;
+    vertical-align: top;
+    top: 6.25%;
+    font-size: inherit;
+    line-height: inherit;
+  }
+}

@@ -1,0 +1,114 @@
+@mixin button {
+  @include primary-disabled();
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  width: auto;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+  padding: $Button-padding;
+  margin: 0 calculateRem(10) calculateRem(10) 0;
+  border-radius: $Button-borderRadius;
+  border: calculateRem(1) solid $Button-borderColor;
+  color: $Button-textColor;
+  font-size: $Button-fontSize;
+  font-weight: bold;
+  background-color: $Button-backgroundColor;
+  font-style: normal;
+  line-height: 1;
+  transition-property: color;
+  transition-duration: $Theme-transitionDuration;
+  touch-action: manipulation;
+
+  &:hover,
+  &:active,
+  &.is-active,
+  &.link.active,
+  &.link.hover,
+  &.link:active,
+  &.link:hover {
+    background-color: $Button-backgroundColor--active;
+    border-color: $Button-borderColor--active;
+    color: $Button-textColor--active;
+    text-decoration: none;
+  }
+
+  &.Button--success {
+    background-color: $Button-success;
+    border: calculateRem(1) solid $Button-success;
+
+    &:hover,
+    &:active,
+    &.is-active,
+    &.link.active,
+    &.link.hover,
+    &.link:active,
+    &.link:hover {
+      background-color: $Button-success--active;
+      border-color: $Button-success--active;
+      color: $Button-success--active;
+      text-decoration: none;
+    }
+  }
+
+  &.Button--info {
+    background-color: $Button-info;
+    border: calculateRem(1) solid $Button-info;
+
+    &:hover,
+    &:active,
+    &.is-active,
+    &.link.active,
+    &.link.hover,
+    &.link:active,
+    &.link:hover {
+      background-color: $Button-info--active;
+      border-color: $Button-info--active;
+      color: $Button-info--active;
+      text-decoration: none;
+    }
+  }
+
+  &.Button--warning {
+    background-color: $Button-warning;
+    border: calculateRem(1) solid $Button-warning;
+
+    &:hover,
+    &:active,
+    &.is-active,
+    &.link.active,
+    &.link.hover,
+    &.link:active,
+    &.link:hover {
+      background-color: $Button-warning--active;
+      border-color: $Button-warning--active;
+      color: $Button-warning--active;
+      text-decoration: none;
+    }
+  }
+
+  &.Button--error {
+    background-color: $Button-error;
+    border: calculateRem(1) solid $Button-error;
+
+    &:hover,
+    &:active,
+    &.is-active,
+    &.link.active,
+    &.link.hover,
+    &.link:active,
+    &.link:hover {
+      background-color: $Button-error--active;
+      border-color: $Button-error--active;
+      color: $Button-error--active;
+      text-decoration: none;
+    }
+  }
+
+}

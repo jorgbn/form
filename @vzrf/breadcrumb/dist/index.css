@@ -1,0 +1,97 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Breadcrumbs Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+**/
+.Breadcrumb {
+  padding-left: 0;
+}
+
+.Breadcrumb li.Breadcrumb-item {
+  display: inline-block;
+}
+
+.Breadcrumb li.Breadcrumb-item a {
+  text-decoration: none;
+}
+
+.Breadcrumb li.Breadcrumb-item.is-active a {
+  pointer-events: none;
+  font-weight: bold;
+  color: #000000;
+}
+
+.Breadcrumb li.Breadcrumb-item ~ li.Breadcrumb-item {
+  margin-left: 1.75rem;
+  position: relative;
+}
+
+.Breadcrumb li.Breadcrumb-item ~ li.Breadcrumb-item::before {
+  content: '';
+  height: 75%;
+  width: 0.0625rem;
+  left: -0.875rem;
+  background: #000000;
+  position: absolute;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  margin: auto;
+  top: 0;
+  bottom: 0;
+}

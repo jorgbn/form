@@ -1,0 +1,75 @@
+// Notification Base
+.Notifications {
+  position: absolute;
+  bottom: calculateRem(14);
+  right: calculateRem(14);
+  max-width: 40%;
+  min-width: calculateRem(375);
+  height: calculateRem(58);
+
+  &.Notification--fixed {
+    position: fixed;
+  }
+}
+
+.Notification {
+  position: relative;
+  padding: calculateRem(14 42 14 17);
+  margin-bottom: calculateRem(7);
+  background-color: $Notification-background;
+  color: $Notification-textColor;
+  font-weight: bold;
+  text-align: left;
+  line-height: calculateRem(14);
+
+  &.Notification--success {
+    color: $Theme-textColor--success;
+    background-color: $Theme-success;
+  }
+
+  &.Notification--info {
+    color: $Theme-textColor--info;
+    background-color: $Theme-info;
+  }
+
+  &.Notification--warning {
+    color: $Theme-textColor--warning;
+    background-color: $Theme-warning;
+  }
+
+  &.Notification--error {
+    color: $Theme-textColor--error;
+    background-color: $Theme-error;
+  }
+}
+
+// Notification Close
+.Notification-close {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  border: 0;
+  top: 0;
+  right: calculateRem(14);
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  margin: 0;
+  height: 100%;
+
+  &:hover,
+  &:focus {
+    background: transparent;
+    color: inherit;
+    outline: none;
+  }
+
+  &::after {
+    color: inherit;
+    display: inline-block;
+    background-color: transparent;
+    content: $Notification-content--close;
+    font-size: calculateRem(24);
+  }
+}

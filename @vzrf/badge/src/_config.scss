@@ -1,0 +1,16 @@
+/**
+  Badges Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+
+**/
+
+// Imports
+
+// General
+$Badge-backgroundColor: $Theme-primary !default;
+$Badge-textColor: #ffffff !default;

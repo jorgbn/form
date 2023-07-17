@@ -1,0 +1,20 @@
+/**
+  Pagination Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - General
+  - Pagination Item
+**/
+
+// General
+
+// Pagination Item
+$PaginationItem-radius: 0 !default;
+$PaginationItem-color: #000000 !default;
+$PaginationItem-padding: calculateRem(7 14) !default;
+$PaginationItem-textColor--active: #ffffff !default;
+$PaginationItem-background--active: #000000 !default;
+$PaginationItem-border--active: #000000 !default;
+$PaginationItem-textColor--disabled: $Theme-backgroundColor--disabled !default;

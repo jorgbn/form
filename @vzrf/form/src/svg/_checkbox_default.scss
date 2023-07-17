@@ -1,0 +1,5 @@
+@function checkbox_default() {
+  @return svg-url(
+    '<svg width="999px" height="999px" viewBox="0 0 999 999" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch --><title>checkbox-default</title><desc>Created with Sketch.</desc><defs></defs><g id="checkbox-default" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M0,0 L999,0 L999,999 L0,999 L0,0 Z M50,50 L50,950 L950,950 L950,50 L50,50 Z" id="Combined-Shape" fill="#000000"></path></g></svg>'
+  )
+}

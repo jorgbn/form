@@ -1,0 +1,5 @@
+@function radio_focus_error_selected() {
+  @return svg-url(
+    '<svg width="999px" height="999px" viewBox="0 0 999 999" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch --><title>radio-selected-focus-error</title><desc>Created with Sketch.</desc><defs></defs><g id="radio-selected-focus-error" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M499.5,999 C223.633767,999 0,775.366233 0,499.5 C0,223.633767 223.633767,0 499.5,0 C775.366233,0 999,223.633767 999,499.5 C999,775.366233 775.366233,999 499.5,999 Z M499.294643,915 C726.446402,915 910.589286,729.198171 910.589286,500 C910.589286,270.801829 726.446402,85 499.294643,85 C272.142884,85 88,270.801829 88,500 C88,729.198171 272.142884,915 499.294643,915 Z M499.30201,701.620101 C388.678265,701.620101 299,611.042806 299,499.31005 C299,387.577295 388.678265,297 499.30201,297 C609.925756,297 699.60402,387.577295 699.60402,499.31005 C699.60402,611.042806 609.925756,701.620101 499.30201,701.620101 Z" id="Combined-Shape" fill="#EC7002"></path></g></svg>'
+  )
+}

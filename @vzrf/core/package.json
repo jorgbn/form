@@ -1,0 +1,94 @@
+{
+  "_from": "@vzrf/core@^1.2.5",
+  "_id": "@vzrf/core@1.2.5",
+  "_inBundle": false,
+  "_integrity": "sha1-DYhnlkNMkVUM2Wbjt9nfWfwsYZM=",
+  "_location": "/@vzrf/core",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/core@^1.2.5",
+    "name": "@vzrf/core",
+    "escapedName": "@vzrf%2fcore",
+    "scope": "@vzrf",
+    "rawSpec": "^1.2.5",
+    "saveSpec": null,
+    "fetchSpec": "^1.2.5"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/core/-/@vzrf/core-1.2.5.tgz",
+  "_shasum": "0d886796434c91550cd966e3b7d9df59fc2c6193",
+  "_spec": "@vzrf/core@^1.2.5",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Edward W. Baer"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/accordion": "^3.0.11",
+    "@vzrf/alert": "^2.0.13",
+    "@vzrf/avatar": "^2.0.11",
+    "@vzrf/badge": "^2.0.11",
+    "@vzrf/bar": "^2.0.11",
+    "@vzrf/breadcrumb": "^1.0.12",
+    "@vzrf/button": "^3.2.4",
+    "@vzrf/callout": "^2.0.11",
+    "@vzrf/default": "^4.0.9",
+    "@vzrf/dropdown": "^2.0.13",
+    "@vzrf/form": "^3.2.5",
+    "@vzrf/grid": "^2.0.12",
+    "@vzrf/icon": "^1.0.12",
+    "@vzrf/loaders": "^1.0.13",
+    "@vzrf/modal": "^1.0.13",
+    "@vzrf/notification": "^1.0.14",
+    "@vzrf/pagination": "^1.0.11",
+    "@vzrf/progress": "^1.0.11",
+    "@vzrf/rating": "^1.0.11",
+    "@vzrf/reset": "^2.0.11",
+    "@vzrf/steps": "^2.0.11",
+    "@vzrf/swiper": "^1.0.11",
+    "@vzrf/tables": "^2.0.11",
+    "@vzrf/tabs": "^1.0.11",
+    "@vzrf/tag": "^2.0.12",
+    "@vzrf/tooltip": "^1.1.3",
+    "@vzrf/typography": "^5.1.3",
+    "@vzrf/util-align": "^2.0.7",
+    "@vzrf/util-colors": "^3.0.7",
+    "@vzrf/util-display": "^3.0.7",
+    "@vzrf/util-flexbox": "^3.0.9",
+    "@vzrf/util-float": "^2.0.7",
+    "@vzrf/util-opacity": "^2.0.7",
+    "@vzrf/util-spacing": "^2.0.7",
+    "@vzrf/util-text": "^3.0.7",
+    "@vzrf/util-touchable": "^2.0.7",
+    "@vzrf/util-video": "^2.0.8",
+    "@vzrf/util-visibility": "^2.0.7"
+  },
+  "deprecated": false,
+  "description": "VZRF Core - All Verizon Reactive Framework Components",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/core",
+  "scripts": {
+    "build": "node ../../build/scss.js"
+  },
+  "version": "1.2.5"
+}

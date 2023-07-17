@@ -1,0 +1,22 @@
+/**
+  Dropdown Menu Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - General
+
+**/
+
+// General
+
+$Dropdown-borderColor: $coolGray6;
+$Dropdown-borderColor--active: $black;
+
+$Dropdown-disabled: $coolGray3;
+
+$Dropdown-arrowColor: $coolGray6;
+$Dropdown-textColor: $coolGray6;
+
+$Dropdown-arrowColor--active: $black;
+$Dropdown-textColor--active: $black;

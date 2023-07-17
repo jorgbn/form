@@ -1,0 +1,66 @@
+/**
+  Forms Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - Form Groups
+  - General
+  - Form Help
+  - Labels
+  - Text Inputs
+  - Text Input
+  - Input Focus
+  - Input Icons
+  - Selects
+  - Controls
+  - Text Area
+
+**/
+// Imports
+
+// General
+$Form-color--success: $Theme-success !default;
+$Form-color--info: $Theme-info !default;
+$Form-color--warning: $Theme-warning !default;
+$Form-color--error: $Theme-error !default;
+$Form-borderWidth: calculateRem(4) !default;
+$Form-paddingBottom: calculateRem(13) !default;
+$Form-color--disabled: $Theme-backgroundColor--disabled !default;
+
+// Form Themes
+$Form-themes: (
+  success: $Form-color--success,
+  info: $Form-color--info,
+  warning: $Form-color--warning,
+  error: $Form-color--error
+);
+
+// Form Groups
+$Form-margin--group: $Theme-spacer--medium !default;
+$Form-margin--control: $Theme-spacer--small !default;
+
+// Form Help
+$Form-margin--help: $Theme-spacer--small !default;
+$Form-fontSize--help: calculateRem(12) !default;
+$Form-textColor--help: $Theme-color--gray6 !default;
+
+// Labels
+$Label-fontSize: calculateRem(10) !default;
+$Label-margin: 0 !default;
+$Label-textColor--disabled: $Theme-color--gray3 !default;
+
+// Text Inputs
+$Input-margin: 0 !default;
+$Input-marginTop: $Theme-spacer--small !default;
+$Input-padding: $Theme-spacer--medium !default;
+$Input-backgroundColor: $Theme-background !default;
+$Input-borderRadius: 0 !default;
+$Input-borderColor: $Theme-color--black !default;
+$Input-borderColor--alt: $Theme-color--gray3;
+$Input-textColor: $Theme-color--black !default;
+$Input-placeholderColor: $Theme-color--gray6 !default;
+$Input-fontSize: calculateRem(14) !default;
+$Input-fontWeight: normal !default;
+$Input-lineHeight: 1 !default;

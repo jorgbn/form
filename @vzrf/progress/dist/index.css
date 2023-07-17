@@ -1,0 +1,123 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Pagination Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - General
+**/
+.Progress {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background-color: #d8dada;
+}
+
+.ProgressLabel {
+  margin-bottom: 0.4375rem;
+}
+
+.Progress-meter {
+  height: 1.3125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #d52b1e;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-family: inherit;
+  line-height: 1;
+}
+
+.Progress-meter.Progress-meter--textLeft {
+  justify-content: flex-start;
+}
+
+.Progress-meter.Progress-meter--textLeft::before {
+  content: ' ';
+  display: inline-block;
+  padding-left: 0.25rem;
+}
+
+.Progress-meter.Progress-meter--textRight {
+  justify-content: flex-end;
+}
+
+.Progress-meter.Progress-meter--textRight::after {
+  content: ' ';
+  display: inline-block;
+  padding-right: 0.25rem;
+}
+
+.Progress-meter.Progress-meter--success {
+  background-color: #00ac3e;
+}
+
+.Progress-meter.Progress-meter--info {
+  background-color: #0088ce;
+}
+
+.Progress-meter.Progress-meter--warning {
+  background-color: #ffbc3d;
+  color: #000000;
+}
+
+.Progress-meter.Progress-meter--error {
+  background-color: #ed7000;
+}

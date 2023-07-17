@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/util-display@^3.0.7",
+  "_id": "@vzrf/util-display@3.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-cpleF/5SmIDdUMbtTWNvUt+zEHk=",
+  "_location": "/@vzrf/util-display",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/util-display@^3.0.7",
+    "name": "@vzrf/util-display",
+    "escapedName": "@vzrf%2futil-display",
+    "scope": "@vzrf",
+    "rawSpec": "^3.0.7",
+    "saveSpec": null,
+    "fetchSpec": "^3.0.7"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/util-display/-/@vzrf/util-display-3.0.7.tgz",
+  "_shasum": "72995e17fe529880dd50c6ed4d636f52dfb31079",
+  "_spec": "@vzrf/util-display@^3.0.7",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Display Utility",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Display Utility"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/util-display",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "3.0.7"
+}

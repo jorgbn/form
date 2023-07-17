@@ -1,0 +1,44 @@
+.Avatar {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  border: none;
+  font-weight: normal;
+  line-height: 2;
+  border-radius: 50%;
+  color: $Avatar-textColor;
+  background-color: $Avatar-backgroundColor;
+  text-align: center;
+  vertical-align: middle;
+  width: $Avatar-width;
+  height: $Avatar-height;
+  font-size: $Avatar-fontSize;
+
+  // Styles for nested <img />
+  .Avatar-image {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    vertical-align: top;
+  }
+
+  &.Avatar--small {
+    width: $Avatar-width--small;
+    height: $Avatar-height--small;
+    font-size: $Avatar-fontSize--small;
+  }
+
+  &.Avatar--large {
+    width: $Avatar-width--large;
+    height: $Avatar-height--large;
+    font-size: $Avatar-fontSize--large;
+  }
+
+  &.Avatar--extraLarge {
+    width: $Avatar-width--extraLarge;
+    height: $Avatar-height--extraLarge;
+    font-size: $Avatar-fontSize--extraLarge;
+  }
+}

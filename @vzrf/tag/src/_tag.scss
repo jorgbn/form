@@ -1,0 +1,30 @@
+.Tag {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: calculateRem(2);
+  padding: calculateRem(3.5 7);
+  font-size: 0.9em;
+  line-height: 1;
+  background-color: $Tag-background;
+  color: $Tag-textColor;
+
+  &.Tag--success {
+    background-color: $Tag-background--success;
+    color: $Tag-textColor--success;
+  }
+
+  &.Tag--info {
+    background-color: $Tag-background--info;
+    color: $Tag-textColor--info
+  }
+
+  &.Tag--warning {
+    background-color: $Tag-background--warning;
+    color: $Tag-textColor--warning;
+  }
+
+  &.Tag--error {
+    background-color: $Tag-background--error;
+    color: $Tag-textColor--error;
+  }
+}

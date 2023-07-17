@@ -1,0 +1,24 @@
+/**
+  Modal Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - General
+  - Modal Close
+  - Modal Overlay
+
+**/
+
+// General
+$Modal-zIndex: 99 !default;
+$Modal-width: 50% !default;
+
+// Modal Close
+$Modal-content--close: '✕' !default;
+$Modal-fontFamily--close: inherit !default;
+$Modal-fontSize--close: calculateRem(18) !default;
+
+// Modal Overlay
+$Modal-backgroundColor--overlay: rgba(0, 0, 0, .5) !default;

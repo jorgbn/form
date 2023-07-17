@@ -1,0 +1,9 @@
+// Return line-height from font size or from font-size and leading options in photoshop.
+
+@function lineheight($font-size, $leading: "") {
+  @if $leading != "" {
+    @return #{($font-size + $leading / 2 ) / $font-size}
+  } @else {
+    @return #{$font-size * 1.20 / $font-size}
+  }
+}

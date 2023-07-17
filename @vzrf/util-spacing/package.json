@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/util-spacing@^2.0.7",
+  "_id": "@vzrf/util-spacing@2.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-oTzQrY5mltiSmTtPXZbWg7vkOvg=",
+  "_location": "/@vzrf/util-spacing",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/util-spacing@^2.0.7",
+    "name": "@vzrf/util-spacing",
+    "escapedName": "@vzrf%2futil-spacing",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.7",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.7"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/util-spacing/-/@vzrf/util-spacing-2.0.7.tgz",
+  "_shasum": "a13cd0ad8e6696d892993b4f5d96d683bbe43af8",
+  "_spec": "@vzrf/util-spacing@^2.0.7",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Spacing Utility",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Spacing Utility"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/util-spacing",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.7"
+}

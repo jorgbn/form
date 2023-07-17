@@ -1,0 +1,141 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Callout Configuration File.
+**/
+.Callout {
+  position: relative;
+  padding: 0.875rem;
+  background-color: #f6f6f6;
+}
+
+.Callout p {
+  font-size: 1.125rem;
+}
+
+.Callout.Callout--center, .Callout.Callout--left, .Callout.Callout--right {
+  display: block;
+}
+
+.Callout.Callout--overlay {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Callout.Callout--overlay::before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+
+.Callout.Callout--overlay.Callout--light {
+  color: #000000;
+}
+
+.Callout.Callout--overlay.Callout--light::before {
+  background: rgba(250, 250, 250, 0.75);
+}
+
+.Callout.Callout--overlay.Callout--light .Callout-content {
+  color: #000000;
+}
+
+.Callout.Callout--overlay .Callout-content {
+  position: relative;
+  color: #ffffff;
+  z-index: 2;
+}
+
+@media screen and (min-width: 768px) {
+  .Callout.Callout--center, .Callout.Callout--left, .Callout.Callout--right {
+    display: flex;
+  }
+  .Callout.Callout--center .Callout-content, .Callout.Callout--left .Callout-content, .Callout.Callout--right .Callout-content {
+    padding: 0.875rem;
+    max-width: 60%;
+    flex-basis: 60%;
+  }
+  .Callout.Callout--left {
+    justify-content: flex-start;
+  }
+  .Callout.Callout--left .Callout-content {
+    margin-left: 0.875rem;
+  }
+  .Callout.Callout--right {
+    justify-content: flex-end;
+  }
+  .Callout.Callout--right .Callout-content {
+    margin-right: 0.875rem;
+  }
+  .Callout.Callout--center {
+    justify-content: center;
+    text-align: center;
+  }
+  .Callout.Callout--center .Callout-content {
+    max-width: 80%;
+    flex-basis: 80%;
+  }
+}
+
+@media screen and (min-width: 991px) {
+  .Callout {
+    padding: 0.875rem;
+  }
+}

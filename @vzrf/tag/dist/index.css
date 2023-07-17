@@ -1,0 +1,96 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Tags Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - General
+  - Success
+  - Info
+  - Warning
+  - Error
+
+**/
+.Tag {
+  display: inline-block;
+  vertical-align: middle;
+  border-radius: 0.125rem;
+  padding: 0.21875rem 0.4375rem;
+  font-size: 0.9em;
+  line-height: 1;
+  background-color: #747676;
+  color: #ffffff;
+}
+
+.Tag.Tag--success {
+  background-color: #00ac3e;
+  color: #ffffff;
+}
+
+.Tag.Tag--info {
+  background-color: #0088ce;
+  color: #ffffff;
+}
+
+.Tag.Tag--warning {
+  background-color: #ffbc3d;
+  color: #000000;
+}
+
+.Tag.Tag--error {
+  background-color: #ed7000;
+  color: #ffffff;
+}

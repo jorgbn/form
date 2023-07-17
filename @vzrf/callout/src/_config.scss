@@ -1,0 +1,16 @@
+/**
+  Callout Configuration File.
+**/
+
+// Import
+$Callout-textColor--light: $white !default;
+$Callout-textColor: $black !default;
+$Callout-background: #f6f6f6 !default;
+$Callout-overlay: rgba(0, 0, 0, .4) !default;
+$Callout-overlay--light: rgba(250, 250, 250, .75) !default;
+$Callout-contentWidth: 60% !default;
+$Callout-contentWidth--full: 80% !default;
+$Callout-breakpoint--small: map_get($Theme-breakpoints, sm) !default;
+$Callout-breakpoint--medium: map_get($Theme-breakpoints, md) !default;
+$Callout-breakpoint--large: map_get($Theme-breakpoints, lg) !default;
+

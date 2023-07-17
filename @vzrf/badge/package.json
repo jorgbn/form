@@ -1,0 +1,60 @@
+{
+  "_from": "@vzrf/badge@^2.0.11",
+  "_id": "@vzrf/badge@2.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-B8+fImCPusT3n1swSwqZ/Rx3sqc=",
+  "_location": "/@vzrf/badge",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/badge@^2.0.11",
+    "name": "@vzrf/badge",
+    "escapedName": "@vzrf%2fbadge",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/badge/-/@vzrf/badge-2.0.11.tgz",
+  "_shasum": "07cf9f22608fbac4f79f5b304b0a99fd1c77b2a7",
+  "_spec": "@vzrf/badge@^2.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Edward W. Baer"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Badge - Indicator for messages. Badges allow you to easily add a otification for your users. They are circular and typically contain a text value signaling the number of alerts or they can remain empty",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Badge"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/badge",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.11"
+}

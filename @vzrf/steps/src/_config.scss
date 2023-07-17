@@ -1,0 +1,19 @@
+/**
+  Steps Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - Step
+  - Steps
+  - Step Arrow
+
+**/
+
+$Steps-background--enabled: $black;
+$Steps-textColor--enabled: $white;
+$Steps-background--active: $coolGray3;
+$Steps-textColor--active: $black;
+$Steps-background: $white;
+$Steps-textColor: $black;

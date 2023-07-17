@@ -1,0 +1,5 @@
+@function radio_error() {
+  @return svg-url(
+    '<svg width="999px" height="999px" viewBox="0 0 999 999" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch --><title>radio-default-error</title><desc>Created with Sketch.</desc><defs></defs><g id="radio-default-error" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><path d="M499.5,999 C223.633767,999 0,775.366233 0,499.5 C0,223.633767 223.633767,0 499.5,0 C775.366233,0 999,223.633767 999,499.5 C999,775.366233 775.366233,999 499.5,999 Z M500.00201,949.803015 C746.202226,949.803015 945.786935,748.420246 945.786935,500.00201 C945.786935,251.583775 746.202226,50.201005 500.00201,50.201005 C253.801794,50.201005 54.2170854,251.583775 54.2170854,500.00201 C54.2170854,748.420246 253.801794,949.803015 500.00201,949.803015 Z" id="Combined-Shape" fill="#EC7002"></path></g></svg>'
+  )
+}

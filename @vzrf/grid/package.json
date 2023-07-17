@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/grid@^2.0.12",
+  "_id": "@vzrf/grid@2.0.12",
+  "_inBundle": false,
+  "_integrity": "sha1-d/ozkaxwadVKYEwHlavZF9P/RiI=",
+  "_location": "/@vzrf/grid",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/grid@^2.0.12",
+    "name": "@vzrf/grid",
+    "escapedName": "@vzrf%2fgrid",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.12",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.12"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/grid/-/@vzrf/grid-2.0.12.tgz",
+  "_shasum": "77fa3391ac7069d54a604c0795abd917d3ff4622",
+  "_spec": "@vzrf/grid@^2.0.12",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Grid - Set the gird column sizing for your app. Based on a 12 column grid, / after setting sizing the grid will flex or grow depending on screen size.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Grid"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/grid",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.12"
+}

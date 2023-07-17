@@ -1,0 +1,28 @@
+/**
+  Table Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - Table
+  - Table Head
+  - Table Body
+  - Table Modifier
+
+**/
+
+// Import
+$Table-borderColor: $black;
+
+$Table-backgroundColor--head: $black;
+$Table-textColor--head: $white;
+
+$Table-backgroundColor--body: $white;
+$Table-textColor--body: $black;
+
+$Table-borderColor--head: $white !default;
+$Table-borderColor--body: $black !default;
+
+$Table-border--hover: $coolGray3 !default;
+$Table-border--striped: $coolGray3 !default;

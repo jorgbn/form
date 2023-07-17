@@ -1,0 +1,60 @@
+{
+  "_from": "@vzrf/rating@^1.0.11",
+  "_id": "@vzrf/rating@1.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-+OkwiT2e1A2JU96qgBF5GMGwem8=",
+  "_location": "/@vzrf/rating",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/rating@^1.0.11",
+    "name": "@vzrf/rating",
+    "escapedName": "@vzrf%2frating",
+    "scope": "@vzrf",
+    "rawSpec": "^1.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/rating/-/@vzrf/rating-1.0.11.tgz",
+  "_shasum": "f8e930893d9ed40d8953deaa80117918c1b07a6f",
+  "_spec": "@vzrf/rating@^1.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Devon Yarbrough"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Rating - Rating Element. Small icons that indicate status ratings for places or products.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Rating"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/rating",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.11"
+}

@@ -1,0 +1,13 @@
+//Video CSS
+.u-video {
+  height: 0;
+  overflow: hidden;
+  padding-bottom: 67.5% !important;
+  position: relative;
+
+  & iframe {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+  }
+}

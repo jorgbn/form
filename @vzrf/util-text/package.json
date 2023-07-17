@@ -1,0 +1,60 @@
+{
+  "_from": "@vzrf/util-text@^3.0.7",
+  "_id": "@vzrf/util-text@3.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-TnrXLj+vT+ekcCO4Wauvg4RzJSA=",
+  "_location": "/@vzrf/util-text",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/util-text@^3.0.7",
+    "name": "@vzrf/util-text",
+    "escapedName": "@vzrf%2futil-text",
+    "scope": "@vzrf",
+    "rawSpec": "^3.0.7",
+    "saveSpec": null,
+    "fetchSpec": "^3.0.7"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/util-text/-/@vzrf/util-text-3.0.7.tgz",
+  "_shasum": "4e7ad72e3faf4fe7a47023b859abaf8384732520",
+  "_spec": "@vzrf/util-text@^3.0.7",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Edward W. Baer"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Typography Utility",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Typography Utility"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/util-text",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "3.0.7"
+}

@@ -1,0 +1,60 @@
+{
+  "_from": "@vzrf/util-video@^2.0.8",
+  "_id": "@vzrf/util-video@2.0.8",
+  "_inBundle": false,
+  "_integrity": "sha1-IMO4vfjMsWc+jAIUm5RoCCoxpnc=",
+  "_location": "/@vzrf/util-video",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/util-video@^2.0.8",
+    "name": "@vzrf/util-video",
+    "escapedName": "@vzrf%2futil-video",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.8",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.8"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/util-video/-/@vzrf/util-video-2.0.8.tgz",
+  "_shasum": "20c3b8bdf8ccb1673e8c02149b9468082a31a677",
+  "_spec": "@vzrf/util-video@^2.0.8",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Edward W. Baer"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Responsive Video Utility",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Video Utility"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/util-video",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.8"
+}

@@ -1,0 +1,4 @@
+@mixin button-tiny {
+  font-size: $Button-font-size--small;
+  padding: calculateRem(6) calculateRem(11);
+}

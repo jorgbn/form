@@ -1,0 +1,60 @@
+{
+  "_from": "@vzrf/util-touchable@^2.0.7",
+  "_id": "@vzrf/util-touchable@2.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-G/167hsbLsh1KKpkqd6u51L66Ao=",
+  "_location": "/@vzrf/util-touchable",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/util-touchable@^2.0.7",
+    "name": "@vzrf/util-touchable",
+    "escapedName": "@vzrf%2futil-touchable",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.7",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.7"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/util-touchable/-/@vzrf/util-touchable-2.0.7.tgz",
+  "_shasum": "1bfd7aee1b1b2ec87528aa64a9deaee752fae80a",
+  "_spec": "@vzrf/util-touchable@^2.0.7",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Edward W. Baer"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Touchable utility",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Touchable Utility"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/util-touchable",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.7"
+}

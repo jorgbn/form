@@ -1,0 +1,162 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Tabs Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - Tab
+  - Tab List
+  - Tab Line
+
+**/
+.Tabs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-top: 0.0625rem solid transparent;
+  border-bottom: 0.0625rem solid #d8dada;
+}
+
+.Tab {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: 0.875rem;
+  min-width: 5rem;
+}
+
+.Tab a, .Tab button {
+  position: relative;
+  border: 0;
+  display: inline-block;
+  padding: 0.1875rem 0;
+  margin: 0;
+  color: #000000;
+  font-weight: bold;
+  font-size: 0.875rem;
+  text-decoration: none;
+  cursor: pointer;
+  background-color: transparent;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  line-height: 1.2;
+  border-top: 0.1875rem solid transparent;
+  border-bottom: 0.1875rem solid transparent;
+  font-family: inherit;
+  text-align: left;
+}
+
+.Tab a:focus, .Tab button:focus {
+  outline: 0.0625rem solid #d8dada;
+}
+
+.Tab a:hover, .Tab button:hover {
+  color: #000000;
+  background-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: #747676;
+}
+
+.Tab.is-active a, .Tab.is-active button {
+  background-color: transparent;
+  color: #000000;
+  border-top-color: transparent;
+  border-bottom-color: #d52b1e;
+}
+
+.Tab.is-active a:hover, .Tab.is-active button:hover {
+  background-color: transparent;
+  color: #000000;
+  border-top-color: transparent;
+  border-bottom-color: #d52b1e;
+}
+
+.Tabs.Tabs--borderHide .Tabs-list {
+  border-bottom-color: transparent;
+}
+
+.Tabs.Tabs--borderTop .Tabs-list {
+  border-top-color: #d8dada;
+  border-bottom-color: transparent;
+}
+
+.Tabs.Tabs--accentTop .Tab.is-active a, .Tabs.Tabs--accentTop .Tab.is-active button, .Tabs.Tabs--accentTop .Tab:hover a, .Tabs.Tabs--accentTop .Tab:hover button, .Tabs.Tabs--accentTop .Tab.is-active:hover a, .Tabs.Tabs--accentTop .Tab.is-active:hover button {
+  background-color: transparent;
+  color: #000000;
+  border-bottom-color: transparent;
+  border-top-color: #d52b1e;
+}
+
+.Tabs.Tabs--accentTop .Tab:hover a, .Tabs.Tabs--accentTop .Tab:hover button {
+  border-bottom-color: transparent;
+  border-top-color: #747676;
+}
+
+.Tabs.Tabs--accentFill .Tab a, .Tabs.Tabs--accentFill .Tab button {
+  padding-right: 0px;
+  margin-right: 0.875rem;
+  width: 100%;
+}
+
+.Tabs.Tabs--centered .Tabs-list {
+  justify-content: center;
+}
+
+.Tabs.Tabs--centered .Tab, .Tabs.Tabs--centered .Tab a, .Tabs.Tabs--centered .Tab button {
+  text-align: center;
+}

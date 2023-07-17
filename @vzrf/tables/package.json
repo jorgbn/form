@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/tables@^2.0.11",
+  "_id": "@vzrf/tables@2.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-CTxnHiSDTbfvJvevVc2lKMq7lCE=",
+  "_location": "/@vzrf/tables",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/tables@^2.0.11",
+    "name": "@vzrf/tables",
+    "escapedName": "@vzrf%2ftables",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/tables/-/@vzrf/tables-2.0.11.tgz",
+  "_shasum": "093c671e24834db7ef26f7af55cda528cabb9421",
+  "_spec": "@vzrf/tables@^2.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Table - Tables are organized structures of data with rows and columns.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Table"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/tables",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.11"
+}

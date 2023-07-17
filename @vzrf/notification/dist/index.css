@@ -1,0 +1,138 @@
+@charset "UTF-8";
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Notifications Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - General
+  - Success
+  - Info
+  - Warning
+  - Error
+**/
+.Notifications {
+  position: absolute;
+  bottom: 0.875rem;
+  right: 0.875rem;
+  max-width: 40%;
+  min-width: 23.4375rem;
+  height: 3.625rem;
+}
+
+.Notifications.Notification--fixed {
+  position: fixed;
+}
+
+.Notification {
+  position: relative;
+  padding: 0.875rem 2.625rem 0.875rem 1.0625rem;
+  margin-bottom: 0.4375rem;
+  background-color: #0088ce;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: left;
+  line-height: 0.875rem;
+}
+
+.Notification.Notification--success {
+  color: #ffffff;
+  background-color: #00ac3e;
+}
+
+.Notification.Notification--info {
+  color: #ffffff;
+  background-color: #0088ce;
+}
+
+.Notification.Notification--warning {
+  color: #000000;
+  background-color: #ffbc3d;
+}
+
+.Notification.Notification--error {
+  color: #ffffff;
+  background-color: #ed7000;
+}
+
+.Notification-close {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  position: absolute;
+  border: 0;
+  top: 0;
+  right: 0.875rem;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+  color: inherit;
+  margin: 0;
+  height: 100%;
+}
+
+.Notification-close:hover, .Notification-close:focus {
+  background: transparent;
+  color: inherit;
+  outline: none;
+}
+
+.Notification-close::after {
+  color: inherit;
+  display: inline-block;
+  background-color: transparent;
+  content: "✕";
+  font-size: 1.5rem;
+}

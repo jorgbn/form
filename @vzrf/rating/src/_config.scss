@@ -1,0 +1,17 @@
+/**
+  Ratings Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - General
+**/
+
+// General
+$Rating-size: $Theme-spacer--large !default;
+$Rating-backgroundColor: #767676 !default;
+$Rating-backgroundColor--checked: #000000 !default;
+$Rating-defaultColor: $Theme-color--gray !default;
+$Rating-icon: "\f005" !default;
+$Rating-icon--selected: "\f005" !default;
+

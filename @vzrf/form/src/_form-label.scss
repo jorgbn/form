@@ -1,0 +1,16 @@
+.Form-label {
+  font-size: $Label-fontSize;
+  display: flex;
+  margin-bottom: $Label-margin;
+  color: $Theme-color--gray6;
+  line-height: 1;
+
+  &--disabled {
+    color: $Label-textColor--disabled;
+  }
+
+  + .Form-input {
+    display: inline-flex;
+    margin-top: $Input-marginTop;
+  }
+}

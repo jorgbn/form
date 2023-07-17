@@ -1,0 +1,52 @@
+{
+  "_from": "@vzrf/accordion@^3.0.11",
+  "_id": "@vzrf/accordion@3.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-IjcTG1QyjM33Tpp2VSSK3WZhuCQ=",
+  "_location": "/@vzrf/accordion",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/accordion@^3.0.11",
+    "name": "@vzrf/accordion",
+    "escapedName": "@vzrf%2faccordion",
+    "scope": "@vzrf",
+    "rawSpec": "^3.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^3.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/accordion/-/@vzrf/accordion-3.0.11.tgz",
+  "_shasum": "2237131b54328ccdf74e9a7655248add6661b824",
+  "_spec": "@vzrf/accordion@^3.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "author": {
+    "name": "Tommy Chanthaboune"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF CSS Accordion - Expandable lists of content. Accordions are sections that eopened and closed based on user input. They can be grouped together or separately and are able to contain a variety of content.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Accordion"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/accordion",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "3.0.11"
+}

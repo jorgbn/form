@@ -1,0 +1,108 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Avatars Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+  - Small
+  - Medium
+  - Large
+  - Extra Large
+**/
+.Avatar {
+  box-sizing: border-box;
+  position: relative;
+  display: inline-block;
+  margin: 0;
+  border: none;
+  font-weight: normal;
+  line-height: 2;
+  border-radius: 50%;
+  color: #ffffff;
+  background-color: #000000;
+  text-align: center;
+  vertical-align: middle;
+  width: 3rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
+
+.Avatar .Avatar-image {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  vertical-align: top;
+}
+
+.Avatar.Avatar--small {
+  width: 2rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.Avatar.Avatar--large {
+  width: 4rem;
+  height: 4rem;
+  font-size: 2rem;
+}
+
+.Avatar.Avatar--extraLarge {
+  width: 5rem;
+  height: 5rem;
+  font-size: 2.5rem;
+}

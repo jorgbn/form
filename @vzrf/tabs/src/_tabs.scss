@@ -1,0 +1,120 @@
+.Tabs-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  border-top: calculateRem(1) solid transparent;
+  border-bottom: calculateRem(1) solid $Theme-borderColor;
+}
+
+.Tab {
+  position: relative;
+  display: inline-block;
+  margin-bottom: 0;
+  margin-right: calculateRem(14);
+  min-width: calculateRem(80);
+
+  a, button {
+    position: relative;
+    border: 0;
+    display: inline-block;
+    padding: calculateRem(3) 0;
+    margin: 0;
+    color: $Tab-textColor;
+    font-weight: bold;
+    font-size: calculateRem(14);
+    text-decoration: none;
+    cursor: pointer;
+    background-color: transparent;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    border-radius: 0;
+    line-height: 1.2;
+    border-top: calculateRem(3) solid transparent;
+    border-bottom: calculateRem(3) solid transparent;
+    font-family: inherit;
+    text-align: left;
+
+    &:focus {
+      outline: calculateRem(1) solid $Theme-borderColor;
+    }
+  }
+
+  a, button {
+    &:hover {
+      color: $Tab-textColor;
+      background-color: transparent;
+      border-top-color: transparent;
+      border-bottom-color: $Tab-color--hover;
+    }
+  }
+
+  &.is-active {
+    a, button {
+      background-color: transparent;
+      color: $Tab-textColor;
+      border-top-color: transparent;
+      border-bottom-color: $Tab-color--active;
+      &:hover {
+        background-color: transparent;
+        color: $Tab-textColor;
+        border-top-color: transparent;
+        border-bottom-color: $Tab-color--active;
+      }
+    }
+  }
+}
+
+.Tabs {
+  &.Tabs--borderHide {
+    .Tabs-list {
+      border-bottom-color: transparent;
+    }
+  }
+
+  &.Tabs--borderTop {
+    .Tabs-list {
+      border-top-color: $Theme-borderColor;
+      border-bottom-color: transparent;
+    }
+  }
+
+  &.Tabs--accentTop {
+    .Tab {
+      &.is-active, &:hover, &.is-active:hover {
+        a, button {
+          background-color: transparent;
+          color: $Tab-textColor;
+          border-bottom-color: transparent;
+          border-top-color: $Tab-color--active;
+
+        }
+      }
+      &:hover {
+        a, button {
+          border-bottom-color: transparent;
+          border-top-color: $Tab-color--hover;
+        }
+      }
+    }
+  }
+
+  &.Tabs--accentFill {
+    .Tab {
+      a, button {
+        padding-right: 0px;
+        margin-right: calculateRem(14);
+        width: 100%;
+      }
+    }
+  }
+
+  &.Tabs--centered {
+    .Tabs-list{
+      justify-content: center;
+    }
+    .Tab, .Tab a, .Tab button {
+      text-align: center;
+    }
+  }
+}

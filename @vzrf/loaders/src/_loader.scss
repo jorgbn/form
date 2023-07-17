@@ -1,0 +1,47 @@
+@mixin circle-loader {
+  display: none;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: $Loader-width;
+    height: $Loader-height;
+    display: block;
+    z-index: 6;
+    background-image: svg-url($Loader-svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-top-color: transparent;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    animation: loading 0.5s infinite linear;
+  }
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.Loader {
+  @include circle-loader();
+  &.is-active {
+    display: block;
+  }
+}
+
+.Loader--overlay {
+  background-color: rgba($Loader-background, $Loader-transparency);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 5;
+}

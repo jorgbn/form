@@ -1,0 +1,64 @@
+.Progress {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  overflow: hidden;
+  border: 0;
+  border-radius: 0;
+  background-color: $Progress-backgroundColor;
+}
+
+.ProgressLabel {
+  margin-bottom: calculateRem(7);
+}
+
+.Progress-meter {
+  height: calculateRem(21);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $Progress-meterColor;
+  color: $Progress-textColor;
+  font-size: $Progress-fontSize;
+  font-family: inherit;
+  line-height: 1;
+
+  &.Progress-meter--textLeft {
+    justify-content: flex-start;
+
+    &::before {
+      content: ' ';
+      display: inline-block;
+      padding-left: calculateRem(4);
+    }
+  }
+
+  &.Progress-meter--textRight {
+    justify-content: flex-end;
+
+    &::after {
+      content: ' ';
+      display: inline-block;
+      padding-right: calculateRem(4);
+    }
+  }
+
+  &.Progress-meter--success {
+    background-color: $Progress-background--success;
+  }
+
+  &.Progress-meter--info {
+    background-color: $Progress-background--info;
+  }
+
+  &.Progress-meter--warning {
+    background-color: $Progress-background--warning;
+    color: $Progress-textColor--warning;
+  }
+
+  &.Progress-meter--error {
+    background-color: $Progress-background--error;
+  }
+
+}

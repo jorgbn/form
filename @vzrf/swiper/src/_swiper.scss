@@ -1,0 +1,191 @@
+.Swiper {
+  position: relative;
+  background-color: $Swiper-backgroundColor;
+  display: block;
+  border: $Swiper-border;
+  height: $Swiper-height;
+}
+
+.Swiper-slides {
+  position: relative;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden;
+  height: 100%;
+}
+
+.Swiper-slide {
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: calc(100% - #{calculateRem(70)});
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: $Swiper-backgroundColor;
+  border-left: $Swiper-border;
+  padding: calculateRem(14);
+
+  * {
+    opacity: .5;
+  }
+
+  &.is-current {
+    visibility: visible;
+    position: relative;
+    * {
+      opacity: 1;
+    }
+  }
+
+  &.is-next {
+    position: absolute;
+    left: calc(100% - #{calculateRem(70)});
+    visibility: visible;
+  }
+}
+
+.Swiper-progress {
+  position: absolute;
+  bottom: calculateRem(14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - #{calculateRem(70)});
+
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 0;
+    margin-bottom: 0;
+  }
+
+  li {
+    position: relative;
+    display: block;
+    width: calculateRem(48);
+    bottom: calculateRem(8);
+    padding-bottom: calculateRem(8);
+    margin-right: calculateRem(8);
+    cursor: pointer;
+
+    &::after {
+      content: '';
+      position: absolute;
+      height: calculateRem(4);
+      bottom: 0%;
+      left: 0;
+      right: 0;
+      background-color: #d8dada;
+      transition: height 250ms, transform 250ms;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &:hover, &:focus {
+      &::after {
+        height: calculateRem(8);
+        transition: height 250ms, transform 250ms;
+      }
+    }
+
+    &:focus {
+      outline: calculateRem(1) dashed #000000;
+    }
+
+    &.is-active {
+      &::after {
+        height: calculateRem(8);
+        background-color: #000000;
+      }
+    }
+  }
+
+  &.Swiper-progress--dark {
+    &:focus {
+      outline: calculateRem(1) dashed #ffffff;
+    }
+    li.is-active {
+      &::after {
+        background-color: #ffffff;
+      }
+    }
+  }
+}
+
+// swiper Buttons
+.Swiper-control {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  button:focus {
+    outline: calculateRem(1) dashed #000000;
+  }
+
+  &.Swiper-control--dark {
+
+    button:focus {
+      outline: calculateRem(1) dashed #ffffff;
+    }
+
+    .Swiper-next {
+      background-image: svg-url(
+          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 32" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#a"/><defs><path id="a" fill="#ffffff" d="M16.635.158c.19-.2.505-.212.707-.023l16 15c.202.19.212.505.023.707l-15 16c-.19.2-.505.212-.707.023-.202-.19-.212-.505-.023-.707L31.845 16H0v-1h31.736L16.658.865c-.202-.19-.212-.506-.023-.707z"/></defs></svg>'
+      );
+    }
+
+    .Swiper-previous {
+      background-image: svg-url(
+          '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 32" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#a" transform="rotate(-180 16.75 16)"/><defs><path id="a" fill="#ffffff" d="M16.635.158c.19-.2.505-.212.707-.023l16 15c.202.19.212.505.023.707l-15 16c-.19.2-.505.212-.707.023-.202-.19-.212-.505-.023-.707L31.845 16H0v-1h31.736L16.658.865c-.202-.19-.212-.506-.023-.707z"/></defs></svg>'
+      );
+    }
+
+  }
+}
+
+.Swiper-control--next {
+  right: calculateRem(7);
+}
+
+.Swiper-control--previous {
+  left: calculateRem(7);
+}
+
+.Swiper-next,
+.Swiper-previous {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: 0;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: calculateRem(33);
+  cursor: pointer;
+  border-radius: 0;
+  padding: calculateRem(28);
+  margin: 0;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+.Swiper-next {
+  background-image: svg-url(
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 32" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#a"/><defs><path id="a" d="M16.635.158c.19-.2.505-.212.707-.023l16 15c.202.19.212.505.023.707l-15 16c-.19.2-.505.212-.707.023-.202-.19-.212-.505-.023-.707L31.845 16H0v-1h31.736L16.658.865c-.202-.19-.212-.506-.023-.707z"/></defs></svg>'
+  );
+}
+
+.Swiper-previous {
+  background-image: svg-url(
+      '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34 32" xmlns:xlink="http://www.w3.org/1999/xlink"><use xlink:href="#a" transform="rotate(-180 16.75 16)"/><defs><path id="a" d="M16.635.158c.19-.2.505-.212.707-.023l16 15c.202.19.212.505.023.707l-15 16c-.19.2-.505.212-.707.023-.202-.19-.212-.505-.023-.707L31.845 16H0v-1h31.736L16.658.865c-.202-.19-.212-.506-.023-.707z"/></defs></svg>'
+  );
+}

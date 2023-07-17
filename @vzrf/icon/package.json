@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/icon@^1.0.12",
+  "_id": "@vzrf/icon@1.0.12",
+  "_inBundle": false,
+  "_integrity": "sha1-bVcbj6nCGd7dCkQmhLtSdVWCEAY=",
+  "_location": "/@vzrf/icon",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/icon@^1.0.12",
+    "name": "@vzrf/icon",
+    "escapedName": "@vzrf%2ficon",
+    "scope": "@vzrf",
+    "rawSpec": "^1.0.12",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.12"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/icon/-/@vzrf/icon-1.0.12.tgz",
+  "_shasum": "6d571b8fa9c219dedd0a442684bb527555821006",
+  "_spec": "@vzrf/icon@^1.0.12",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Edward W. Baer"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Icons",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Icon"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/icon",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.12"
+}

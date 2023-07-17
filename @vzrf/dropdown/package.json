@@ -1,0 +1,54 @@
+{
+  "_from": "@vzrf/dropdown@^2.0.13",
+  "_id": "@vzrf/dropdown@2.0.13",
+  "_inBundle": false,
+  "_integrity": "sha1-RTP5H//wJbiyWiSmF5Z1480g87w=",
+  "_location": "/@vzrf/dropdown",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/dropdown@^2.0.13",
+    "name": "@vzrf/dropdown",
+    "escapedName": "@vzrf%2fdropdown",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.13",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.13"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/dropdown/-/@vzrf/dropdown-2.0.13.tgz",
+  "_shasum": "4533f91ffff025b8b25a24a6179675e3cd20f3bc",
+  "_spec": "@vzrf/dropdown@^2.0.13",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Dropdown An expandable list of items. This component will be visually similar to the Select Form Component but the use case and implementation is entirely different.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Dropdown"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/dropdown",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.13"
+}

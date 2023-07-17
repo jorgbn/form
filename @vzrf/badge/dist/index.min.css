@@ -1,0 +1,1 @@
+.Badge{display:inline-block;border-radius:50%;position:relative;background-color:#000;color:#fff;font-size:.75rem;font-weight:400}.Badge:after,.Badge:before{content:"\200B";display:inline-block;line-height:0;padding-top:50%;padding-bottom:50%}.Badge:before{padding-left:.21875rem}.Badge:after{padding-right:.21875rem}

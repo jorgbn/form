@@ -1,0 +1,33 @@
+/**
+  Tags Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - General
+  - Success
+  - Info
+  - Warning
+  - Error
+
+**/
+
+$Tag-textColor: $white !default;
+$Tag-background: $coolGray6 !default;
+
+// Success
+$Tag-textColor--success: $Theme-textColor--success !default;
+$Tag-background--success: $Theme-success !default;
+
+// Info
+$Tag-textColor--info: $Theme-textColor--info !default;
+$Tag-background--info: $Theme-info !default;
+
+// Warning
+$Tag-textColor--warning: $Theme-textColor--warning !default;
+$Tag-background--warning: $Theme-warning;
+
+// Error
+$Tag-textColor--error: $Theme-textColor--error !default;
+$Tag-background--error: $Theme-error !default;

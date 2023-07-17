@@ -1,0 +1,13 @@
+/**
+  Breadcrumbs Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+**/
+
+// Imports
+$Breadcrumb-link--active: $black !default;
+$Breadcrumb-separatorColor: $black !default;

@@ -1,0 +1,200 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Tooltips Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - General
+
+**/
+.Tooltip {
+  display: none;
+  position: absolute;
+  background: #ffffff;
+  border: 0.0625rem solid #000000;
+  color: #000000;
+  padding: 0.875rem;
+  width: 18.75rem;
+}
+
+.Tooltip.is-active {
+  display: block;
+}
+
+.Tooltip.Tooltip--top, .Tooltip.Tooltip--fullTop {
+  margin-bottom: 0.75rem;
+  -webkit-transform: translateY(-0.75rem);
+          transform: translateY(-0.75rem);
+}
+
+.Tooltip.Tooltip--top::after, .Tooltip.Tooltip--fullTop::after {
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  content: "";
+  width: 0.875rem;
+  height: 0.875rem;
+  border-top: 0.0625rem solid black;
+  border-right: 0.0625rem solid black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.Tooltip.Tooltip--top::after, .Tooltip.Tooltip--fullTop::after {
+  top: auto;
+  bottom: -0.5rem;
+}
+
+.Tooltip.Tooltip--right {
+  margin-left: 0.75rem;
+  -webkit-transform: translateX(-0.75rem);
+          transform: translateX(-0.75rem);
+}
+
+.Tooltip.Tooltip--right::after {
+  -webkit-transform: rotate(-135deg);
+          transform: rotate(-135deg);
+  content: "";
+  width: 0.875rem;
+  height: 0.875rem;
+  border-top: 0.0625rem solid black;
+  border-right: 0.0625rem solid black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.Tooltip.Tooltip--right::after {
+  margin: auto 0;
+  right: auto;
+  left: -0.5rem;
+  top: 0;
+  bottom: 0;
+}
+
+.Tooltip.Tooltip--bottom, .Tooltip.Tooltip--fullBottom {
+  margin-top: 0.75rem;
+  -webkit-transform: translateY(0.75rem);
+          transform: translateY(0.75rem);
+}
+
+.Tooltip.Tooltip--bottom::after, .Tooltip.Tooltip--fullBottom::after {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  content: "";
+  width: 0.875rem;
+  height: 0.875rem;
+  border-top: 0.0625rem solid black;
+  border-right: 0.0625rem solid black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.Tooltip.Tooltip--bottom::after, .Tooltip.Tooltip--fullBottom::after {
+  top: -0.5rem;
+  bottom: auto;
+}
+
+.Tooltip.Tooltip--left {
+  margin-right: 0.75rem;
+  -webkit-transform: translateX(0.75rem);
+          transform: translateX(0.75rem);
+}
+
+.Tooltip.Tooltip--left::after {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  content: "";
+  width: 0.875rem;
+  height: 0.875rem;
+  border-top: 0.0625rem solid black;
+  border-right: 0.0625rem solid black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  position: absolute;
+  background-color: #ffffff;
+}
+
+.Tooltip.Tooltip--left::after {
+  margin: auto 0;
+  left: auto;
+  right: -0.5rem;
+  top: 0;
+  bottom: 0;
+}
+
+.Tooltip.Tooltip--fullTop {
+  width: 100%;
+  left: 0;
+  right: 0;
+}
+
+.Tooltip.Tooltip--fullBottom {
+  width: 100%;
+  left: 0;
+  right: 0;
+}

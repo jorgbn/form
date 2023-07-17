@@ -1,0 +1,153 @@
+@mixin arrow($color) {
+  transition: fill 250ms;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 8"><path fill="#{$color}" d="M5.5 5.5l-.354.354.354.353.354-.353L5.5 5.5zM-.354.354l5.5 5.5.708-.708-5.5-5.5-.708.708zm6.208 5.5l5.5-5.5-.708-.708-5.5 5.5.708.708z" /></svg>');
+}
+
+.Dropdown {
+  position: relative;
+  display: inline-block;
+  margin-right: calculateRem(14);
+  margin-bottom: calculateRem(14);
+
+  &.Dropdown--block {
+    width: 100%;
+    display: block;
+    .Dropdown-trigger {
+      a, button {
+        width: 100%;
+        &::after {
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          position: absolute;
+        }
+      }
+    }
+  }
+
+  &.is-selected {
+    .Dropdown-trigger {
+      a, button {
+        color: $Dropdown-textColor--active;
+        &::after {
+          @include arrow($Dropdown-arrowColor--active);
+        }
+      }
+    }
+  }
+
+  &.is-active {
+    .Dropdown-list {
+      display: block;
+    }
+  }
+
+  &.is-error {
+    .Dropdown-trigger {
+      border-bottom: calculateRem(4) solid $Theme-error;
+    }
+  }
+
+  &.is-disabled {
+    pointer-events: none;
+    outline: none;
+
+    .Dropdown-trigger {
+      border-bottom: calculateRem(1) solid $Dropdown-disabled;
+      a, button {
+        color: $Dropdown-disabled;
+        &::after {
+          @include arrow($Dropdown-disabled);
+          transition: fill 250ms;
+        }
+      }
+    }
+  }
+
+  .Dropdown-label, .Dropdown-value {
+    display: none;
+  }
+
+  .Dropdown-trigger {
+    border-bottom: calculateRem(1) solid $Dropdown-borderColor;
+
+    &:hover {
+      a, button {
+        color: $black;
+        transition: color 250ms;
+
+        &::after {
+          @include arrow($Dropdown-arrowColor--active);
+          transition: fill 250ms;
+        }
+      }
+    }
+
+    a, button {
+      background: none;
+      text-align: left;
+      border-radius: 0;
+      padding: 0;
+      margin: 0;
+      font-size: calculateRem(25);
+      color: $coolGray6;
+      border: none;
+      font-family: inherit;
+
+      &::after {
+        @include arrow($Dropdown-arrowColor);
+        transition: fill 250ms;
+        content: '';
+        width: 1ch;
+        height: 1ch;
+        position: relative;
+        margin-left: 1ch;
+        display: inline-block;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+        transition: transform 400ms;
+        transform: rotateX(0deg);
+      }
+    }
+  }
+
+  .Dropdown-list {
+    display: none;
+    position: absolute;
+    width: 100%;
+
+    .Dropdown-item {
+      border: calculateRem(1) solid $Dropdown-disabled;
+      border-top: none;
+      background: #ffffff;
+
+      &:hover {
+        a, button {
+          color: $black;
+        }
+      }
+    }
+
+    a, button {
+      background: none;
+      text-align: left;
+      border-radius: 0;
+      padding: calculateRem(14);
+      margin: 0;
+      font-size: calculateRem(18);
+      color: $Dropdown-textColor;
+      border: none;
+      font-family: inherit;
+      width: 100%;
+    }
+  }
+
+  .Dropdown-message {
+    padding: calculateRem(7) 0;
+    font-size: calculateRem(10.5);
+    margin-bottom: 0;
+  }
+
+}

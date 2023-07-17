@@ -1,0 +1,122 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Table Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Import
+  - Table
+  - Table Head
+  - Table Body
+  - Table Modifier
+
+**/
+table,
+.Table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 1.3125rem;
+  border: 0.0625rem solid #000000;
+}
+
+table th,
+table td,
+.Table th,
+.Table td {
+  border-collapse: collapse;
+  border-spacing: 0;
+  vertical-align: center;
+}
+
+table th,
+.Table th {
+  padding: 0.875rem;
+  background-color: #000000;
+  color: #ffffff;
+  border-right: 0.0625rem solid #ffffff;
+  border-bottom: 0.0625rem solid #ffffff;
+}
+
+table th:last-of-type,
+.Table th:last-of-type {
+  border-right-color: #000000;
+}
+
+table td,
+.Table td {
+  padding: 0.875rem;
+  background-color: #ffffff;
+  color: #000000;
+  border: 0.0625rem solid #000000;
+}
+
+.Table--hover tbody tr:hover td {
+  background-color: #d8dada;
+}
+
+.Table--noBorder {
+  border-color: transparent;
+}
+
+.Table--noBorder th,
+.Table--noBorder td {
+  border-color: transparent;
+}
+
+.Table--striped tbody tr:nth-child(2) td {
+  background-color: #d8dada;
+}

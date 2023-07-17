@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form - Practice</title>
+    <link rel="stylesheet" href="dist/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+    <div id="app">
+        <div class="container">
+            <form id="testForm">
+                <div class="row">
+                    <div class="col s12 l6 offset-l3 white-text card hoverable">
+                        <div class="col s12 card-panel red lighten-1 center">
+                            <h4 class="text-center">Form Create User</h4>
+                        </div>
+                        <div class="divider"></div>
+                        <div class="input-field col s12">
+                            <input placeholder="Username" id="username" type="text" class="validate" required>
+                            <label for="username">User Name</label>
+                        </div>
+                        <div class="input-field col s12">
+                            <input placeholder="Email" id="email" type="email" class="validate" required>
+                            <label for="email">Email</label>
+                            <span class="helper-text" data-error="Wrong" data-success="Right"></span>
+                        </div>
+                        <div class="input-field col s12">
+                            <input placeholder="Password" id="password" type="password" class="validate" required>
+                            <label for="password">Password</label>
+                            <p>
+                                <label>
+                                    <input type="checkbox" id="showPassword" />
+                                    <span>Show</span>
+                                </label>
+                            </p>
+                            <span class="helper-text">Password should be 8 characters long with a number & a special
+                                character</span>
+                            <span id="passwordHelpMsj" class="helper-text" data-error="Wrong"
+                                data-success="Right"></span>
+                        </div>
+                        <div class="input-field col s12">
+                            <input placeholder="Password Confirm" id="passwordConfirm" type="password" class="validate"
+                                required>
+                            <label for="passwordConfirm">Password Confirm</label>
+                            <span class="helper-text">Please confirm your password</span>
+                            <span id="passwordConfirmHelpMsj" class="helper-text" data-error="Wrong"
+                                data-success="Right"></span>
+                        </div>
+
+
+                        <div class="col s12">&nbsp;</div>
+                        <div class="col s12 center">
+                            <div class="col s2">&nbsp;</div>
+                            <button id="submitButtom" type="submit" class="col s8 btn-large red lighten-1 hoverable" disabled>Submit</button>
+                            <span id="" class="helper-text" data-error="Wrong"
+                                data-success="Right">hola mundo</span>
+                            <div class="col s2">&nbsp;</div>
+                        </div>
+                        <div class="col s12">&nbsp;</div>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+
+    </div>
+    <script src="dist/js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+</html>

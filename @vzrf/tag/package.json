@@ -1,0 +1,54 @@
+{
+  "_from": "@vzrf/tag@^2.0.12",
+  "_id": "@vzrf/tag@2.0.12",
+  "_inBundle": false,
+  "_integrity": "sha1-OM3IsfbCGD8xKtYv2irXpI7Mips=",
+  "_location": "/@vzrf/tag",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/tag@^2.0.12",
+    "name": "@vzrf/tag",
+    "escapedName": "@vzrf%2ftag",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.12",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.12"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/tag/-/@vzrf/tag-2.0.12.tgz",
+  "_shasum": "38cdc8b1f6c2183f312ad62fda2ad7a48ecc8a9b",
+  "_spec": "@vzrf/tag@^2.0.12",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Tag - Tiny inline displays of information. Tags can include text as pieces of information for the user. They are general smaller with a colored background.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Tag"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/tag",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.12"
+}

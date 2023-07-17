@@ -1,0 +1,20 @@
+@mixin button-secondary {
+  @include primary-disabled;
+
+  background-color: $Button-backgroundColor--secondary;
+  color: $Button-textColor--secondary;
+  border-color: $Button-borderColor--secondary;
+
+  &:hover,
+  &:active,
+  &.is-active,
+  &.link.active,
+  &.link.hover,
+  &.link:active,
+  &.link:hover {
+    background-color: $Button-backgroundColor--secondaryActive;
+    border-color: $Button-borderColor--secondaryActive;
+    color: $Button-textColor--secondaryActive;
+    text-decoration: none;
+  }
+}

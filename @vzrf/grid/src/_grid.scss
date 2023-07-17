@@ -1,0 +1,75 @@
+.Grid {
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 0 #{0.5 * $Grid-gutter--mobile * -1}px;
+  padding: 0;
+
+  &.Grid--vertical {
+    flex-flow: column nowrap;
+  }
+
+  &.Grid--gapless {
+    margin: 0;
+    > .Col {
+      padding: 0;
+    }
+
+    > .Row {
+      padding: 0;
+    }
+  }
+}
+
+.Col {
+  position: relative;
+  box-sizing: inherit;
+  flex-basis: 100%;
+  max-width: 100%;
+  min-width: 0;
+  padding: 0 #{0.5 * $Grid-gutter--mobile}px #{$Grid-gutter--mobile}px;
+
+}
+
+.Row {
+  position: relative;
+  box-sizing: inherit;
+  flex-basis: 100%;
+  max-height: 100%;
+  min-width: 0;
+  padding: #{0.5 * $Grid-gutter--mobile}px 0;
+}
+
+@for $i from 1 through $Grid-divisible {
+  .Row--#{$i} {
+    flex-basis: percentage($i / $Grid-divisible);
+    max-height: percentage($i / $Grid-divisible);
+  }
+}
+
+@for $i from 1 through $Grid-divisible {
+  .Col--#{$i} {
+    flex-basis: percentage($i / $Grid-divisible);
+    max-width: percentage($i / $Grid-divisible);
+  }
+}
+
+@each $name, $size in $Theme-breakpoints {
+  @media screen and (min-width: $size) {
+    @for $i from 1 through $Grid-divisible {
+      .Col--#{$name}#{$i} {
+        flex-basis: percentage($i / $Grid-divisible);
+        max-width: percentage($i / $Grid-divisible);
+      }
+    }
+  }
+}
+
+@media screen and (min-width: map_get($Theme-breakpoints, lg)) {
+  .Grid {
+    margin: 0 #{0.5 * $Grid-gutter--desktop * -1}px;
+    > .Col {
+      padding: 0 #{0.5 * $Grid-gutter--desktop}px #{$Grid-gutter--desktop}px;
+    }
+  }
+}

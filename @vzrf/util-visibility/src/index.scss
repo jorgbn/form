@@ -1,0 +1,56 @@
+@import "~@vzrf/default/src/index";
+@import "config";
+
+@for $v from 1 through length($Visibility-display) {
+  @for $r from 1 through length($Visibility-range) {
+    @for $b from 1 through length($Visibility-breakpoint) {
+
+      $visibility: #{nth($Visibility-display, $v)};
+      $range: #{nth($Visibility-range, $r)};
+      $breakpoint: #{nth($Visibility-breakpoint, $b)};
+      $px: map-get($Visibility-breakpoint-map, $breakpoint);
+      $value: map-get($Visibility-visibility, $visibility);
+      $initialValue: map-get($Visibility-initial, $visibility);
+
+      // If breakpoint is not ExtraLarge calculate next breakpoint to hide/show element
+      // for  currentBreakPoitn >= viewport < nextBreakPoint
+      $nextpx: null;
+      @if ($breakpoint != 'ExtraLarge') {
+        $next: $b + 1;
+        $nextbreakpoint: #{nth($Visibility-breakpoint, $next)};
+        $nextpx: map-get($Visibility-breakpoint-map, $nextbreakpoint);
+      }
+
+      .u-#{$visibility}#{$breakpoint}#{$range} {
+
+        display: $initialValue !important;
+
+        @if ($range == 'Up') {
+          @media screen and (min-width: $px) {
+            display: $value !important;
+          }
+        }
+
+        @if ($range == 'Down') {
+          @media screen and (max-width: $px) {
+            display: $value !important;
+          }
+        }
+
+        @if ($range == 'Only' and $breakpoint != 'ExtraLarge') {
+          @media screen and (min-width: $px) and (max-width: $nextpx) {
+            display: $value !important;
+          }
+        }
+
+        @if ($range == 'Only' and $breakpoint == 'ExtraLarge') {
+          @media screen and (min-width: $px) {
+            display: $value !important;
+          }
+        }
+
+      }
+
+    }
+  }
+}

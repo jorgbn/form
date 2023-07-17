@@ -1,0 +1,55 @@
+{
+  "_from": "@vzrf/swiper@^1.0.11",
+  "_id": "@vzrf/swiper@1.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-TfjeYHZBJXwO/whduZNfEuHCA1I=",
+  "_location": "/@vzrf/swiper",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/swiper@^1.0.11",
+    "name": "@vzrf/swiper",
+    "escapedName": "@vzrf%2fswiper",
+    "scope": "@vzrf",
+    "rawSpec": "^1.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/swiper/-/@vzrf/swiper-1.0.11.tgz",
+  "_shasum": "4df8de607641257c0eff085db9935f12e1c20352",
+  "_spec": "@vzrf/swiper@^1.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Carousel - A swiper (also known as a carousel) is a section of content that changes based on user input or timers. The card sections can be text or images.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Swiper",
+    "Carousel"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/swiper",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.11"
+}

@@ -1,0 +1,180 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+.u-textNormal {
+  font-style: normal !important;
+}
+
+.u-textItalic {
+  font-style: italic !important;
+}
+
+.u-textOblique {
+  font-style: oblique !important;
+}
+
+.u-textRegular {
+  font-weight: normal !important;
+}
+
+.u-textMedium {
+  font-weight: 500 !important;
+}
+
+.u-textBold {
+  font-weight: bold !important;
+}
+
+.u-textLeft {
+  text-align: left !important;
+}
+
+.u-textRight {
+  text-align: right !important;
+}
+
+.u-textCenter {
+  text-align: center !important;
+}
+
+.u-textJustify {
+  text-align: justify !important;
+}
+
+.u-textStart {
+  text-align: start !important;
+}
+
+.u-textEnd {
+  text-align: end !important;
+}
+
+.u-textCapitalize {
+  text-transform: capitalize !important;
+}
+
+.u-textUppercase {
+  text-transform: uppercase !important;
+}
+
+.u-textLowercase {
+  text-transform: lowercase !important;
+}
+
+.u-textTransformNone {
+  text-transform: none !important;
+}
+
+.u-textUnderline {
+  text-decoration: underline !important;
+}
+
+.u-textOverline {
+  text-decoration: overline !important;
+}
+
+.u-textDecorationNone {
+  text-decoration: none !important;
+}
+
+.u-textLineThrough {
+  text-decoration: line-through !important;
+}
+
+.u-textBreakNormal {
+  word-break: normal !important;
+}
+
+.u-textBreakWrap {
+  word-break: break-all !important;
+}
+
+.u-textBreakNoWrap {
+  word-break: keep-all !important;
+  white-space: nowrap !important;
+}
+
+.u-textLineHeightNormal {
+  line-height: 1.2 !important;
+}
+
+.u-textLineHeightTight {
+  line-height: 1 !important;
+}
+
+.u-textLineHeightLoose {
+  line-height: 1.5 !important;
+}
+
+.u-screenReaderOnly {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  height: 0.0625rem !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 0.0625rem !important;
+  white-space: nowrap !important;
+}
+
+.u-screenReaderOnlyFocusable:focus,
+.u-screenReaderOnlyFocusable:active {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important;
+}

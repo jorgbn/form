@@ -1,0 +1,35 @@
+.Breadcrumb {
+  padding-left: 0;
+
+  li.Breadcrumb-item {
+    display: inline-block;
+    a {
+      text-decoration: none;
+    }
+
+    &.is-active {
+      a {
+        pointer-events: none;
+        font-weight: bold;
+        color: $Breadcrumb-link--active;
+      }
+    }
+    & ~ li.Breadcrumb-item {
+      margin-left: calculateRem(28);
+      position: relative;
+
+      &::before {
+        content: '';
+        height: 75%;
+        width: calculateRem(1);
+        left: calculateRem(-14);
+        background: $Breadcrumb-separatorColor;
+        position: absolute;
+        transform: rotate(20deg);
+        margin: auto;
+        top: 0;
+        bottom: 0;
+      }
+    }
+  }
+}

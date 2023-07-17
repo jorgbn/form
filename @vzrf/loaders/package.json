@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/loaders@^1.0.13",
+  "_id": "@vzrf/loaders@1.0.13",
+  "_inBundle": false,
+  "_integrity": "sha1-BqYjYpoBzS4JiiJgW2En2dfuupw=",
+  "_location": "/@vzrf/loaders",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/loaders@^1.0.13",
+    "name": "@vzrf/loaders",
+    "escapedName": "@vzrf%2floaders",
+    "scope": "@vzrf",
+    "rawSpec": "^1.0.13",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.13"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/loaders/-/@vzrf/loaders-1.0.13.tgz",
+  "_shasum": "06a623629a01cd2e098a22605b6127d9d7eeba9c",
+  "_spec": "@vzrf/loaders@^1.0.13",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Loader - CSS-only Loader. A Loader is added to the page to indicate to the user that the content isn't ready to be viewed.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Loader"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/loaders",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.13"
+}

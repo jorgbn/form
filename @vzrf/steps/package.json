@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/steps@^2.0.11",
+  "_id": "@vzrf/steps@2.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-+IFCMMNP2FXTlWG1/QoogULd9nI=",
+  "_location": "/@vzrf/steps",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/steps@^2.0.11",
+    "name": "@vzrf/steps",
+    "escapedName": "@vzrf%2fsteps",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/steps/-/@vzrf/steps-2.0.11.tgz",
+  "_shasum": "f8814230c34fd855d39561b5fd0a288142ddf672",
+  "_spec": "@vzrf/steps@^2.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Victor Hu"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": " VZRF Steps - Steps of progress to complete an action. Steps indicates what step of progress the user is on when performing a multi-step process, such as a checkout. Depending on available space, the display of the steps will either display just a number, or a number and the name of the step that is currently active.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Steps"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/steps",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.11"
+}

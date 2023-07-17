@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/util-colors@^3.0.7",
+  "_id": "@vzrf/util-colors@3.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-nKjhUH8YYXs0n8+LXOeAUhw0nss=",
+  "_location": "/@vzrf/util-colors",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/util-colors@^3.0.7",
+    "name": "@vzrf/util-colors",
+    "escapedName": "@vzrf%2futil-colors",
+    "scope": "@vzrf",
+    "rawSpec": "^3.0.7",
+    "saveSpec": null,
+    "fetchSpec": "^3.0.7"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/util-colors/-/@vzrf/util-colors-3.0.7.tgz",
+  "_shasum": "9ca8e1507f18617b349fcf8b5ce780521c349ecb",
+  "_spec": "@vzrf/util-colors@^3.0.7",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Text and Background Utility",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Color Utility"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/util-colors",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "3.0.7"
+}

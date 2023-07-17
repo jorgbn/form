@@ -1,0 +1,24 @@
+select.Form-input:not([multiple]) {
+  background-color: transparent;
+  background-image: svg-url(
+    '<svg viewBox="0 0 13 8"><path d="M5.5 5.5l-.354.354.354.353.354-.353L5.5 5.5zM-.354.354l5.5 5.5.708-.708-5.5-5.5-.708.708zm6.208 5.5l5.5-5.5-.708-.708-5.5 5.5.708.708z"/></svg>'
+  );
+  background-repeat: no-repeat;
+  background-position: right $Theme-spacer--medium center;
+  background-size: calculateRem(18);
+  padding: 0 calculateRem(48) 0 1.5ch;
+  line-height: calculateRem(16);
+  cursor: pointer;
+
+  @each $name, $color in $Form-themes {
+    &.is-#{$name} {
+      border-color: $color;
+      border-bottom-width: calculateRem(4);
+    }
+  }
+}
+
+select.Form-input[multiple] {
+  height: auto;
+  padding: 1.5ch;
+}

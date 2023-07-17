@@ -1,0 +1,97 @@
+.Form-switch {
+  border-radius: calculateRem(16);
+  margin:  calculateRem(16 16 0);
+  display: inline-block;
+  position: relative;
+
+  input[type="checkbox"],
+  input[type="radio"] {
+    @include visuallyhide();
+  
+    & + label::before, &:checked + label::before {
+      background-image: none;
+    }
+
+    &:focus + .Form-toggle {
+      border: calculateRem(2) solid $black;
+      outline: none;
+    }
+
+    &:checked + .Form-toggle {
+      background-color: $green;
+      transition: background-color 250ms;
+
+      &::before {
+        transition: left 250ms;
+        left: calc(100% - #{calculateRem(16)});
+        content: '';
+      }
+    }
+  }
+
+  .Form-toggle {
+    width: calculateRem(32);
+    background-color: #a7a7a7;
+    transition: background-color 250ms;
+    border: calculateRem(2) solid transparent;
+    border-radius: calculateRem(16);
+    min-height: calculateRem(20);
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    left: calculateRem(0);
+
+    &::before {
+      background-image: none;
+      padding-left: 0;
+      transition: left 250ms;
+      left: calculateRem(0);
+      content: '';
+      height: calculateRem(16);
+      width: calculateRem(16);
+      background: #ffffff;
+      border-radius: 50%;
+      top: 0;
+      bottom: 0;
+      margin-top: auto;
+      margin-bottom: auto;
+      position: absolute;
+    }
+  }
+
+  &.Form-switch--block {
+    display: block;
+    &.Form-switch--withLabel {
+      display: flex;
+    }
+  }
+
+  &.Form-switch--withLabel {
+    display: inline-flex;
+    align-items: center;
+
+    label {
+      margin-bottom: 0;
+    }
+
+    .Form-label, label {
+      display: inline-block;
+    }
+
+    .Form-label--primary {
+      margin-right: 1ch;
+    }
+
+    .Form-label--secondary {
+      margin-left: 1ch;
+    }
+  }
+
+  &.is-disabled {
+    .Form-toggle {
+      background-color: $Theme-backgroundColor--disabled;
+      cursor: auto;
+    }
+  }
+}

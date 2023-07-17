@@ -1,0 +1,17 @@
+/**
+  Accordion Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+**/
+
+// Imports
+
+// General
+$Accordion-borderColor: $Theme-primary !default;
+$Accordion-fontColor: #000000 !default;
+$Accordion-content--open: '+' !default;
+$Accordion-content--close: '-' !default;

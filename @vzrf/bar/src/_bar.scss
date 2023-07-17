@@ -1,0 +1,27 @@
+.Bar {
+  position: relative;
+  padding-top: calculateRem(21);
+  padding-bottom: calculateRem(14);
+  margin-top: calculateRem(21);
+  border-top: $Bar-border;
+
+  &.Bar--primary {
+    border-top: $Bar-border;
+  }
+
+  &.Bar--secondary {
+    border-top: $Bar-border--secondary;
+  }
+
+  &.Bar--tertiary {
+    border-top: $Bar-border--tertiary;
+  }
+
+  &.Bar--noMargin {
+    margin: 0;
+  }
+
+  &.is-active {
+    border-color: $Bar-color--active;
+  }
+}

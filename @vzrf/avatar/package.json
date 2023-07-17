@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/avatar@^2.0.11",
+  "_id": "@vzrf/avatar@2.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-+Bj2FkfWQUjnBh32Ot4Kcv9HndE=",
+  "_location": "/@vzrf/avatar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/avatar@^2.0.11",
+    "name": "@vzrf/avatar",
+    "escapedName": "@vzrf%2favatar",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/avatar/-/@vzrf/avatar-2.0.11.tgz",
+  "_shasum": "f818f61647d64148e7061df63ade0a72ff479dd1",
+  "_spec": "@vzrf/avatar@^2.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Avatar - Display text or faces in a circle. Avatars are circular sections of content that contains either text or images. They can be used for customizable text icons or for user's profile pictures.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Avatar"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/avatar",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.11"
+}

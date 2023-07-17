@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/modal@^1.0.13",
+  "_id": "@vzrf/modal@1.0.13",
+  "_inBundle": false,
+  "_integrity": "sha1-JsFPC5U6bgHj9DjMCQGSG9MJCqA=",
+  "_location": "/@vzrf/modal",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/modal@^1.0.13",
+    "name": "@vzrf/modal",
+    "escapedName": "@vzrf%2fmodal",
+    "scope": "@vzrf",
+    "rawSpec": "^1.0.13",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.13"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/modal/-/@vzrf/modal-1.0.13.tgz",
+  "_shasum": "26c14f0b953a6e01e3f438cc0901921bd3090aa0",
+  "_spec": "@vzrf/modal@^1.0.13",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Modal - Dialog popups.Modals are sections of content that need to pop out of the page. They will be separate from the normal page content, and will appear based on user interactions with the modal trigger.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Modal"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/modal",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.13"
+}

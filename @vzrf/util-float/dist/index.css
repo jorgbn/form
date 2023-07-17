@@ -1,0 +1,17 @@
+.u-floatClearFix::before,
+.u-floatClearFix::after {
+  content: " ";
+  display: table;
+}
+
+.u-floatClearFix::after {
+  clear: both;
+}
+
+.u-floatLeft {
+  float: left !important;
+}
+
+.u-floatRight {
+  float: right !important;
+}

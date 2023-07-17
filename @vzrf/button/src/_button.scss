@@ -1,0 +1,28 @@
+.Button, button, a.Button {
+  @include button();
+
+  &.Button--secondary {
+    @include button-secondary();
+  }
+
+  &.Button--cta {
+    @include button-cta();
+  }
+
+  &.Button--tiny {
+    @include button-tiny();
+  }
+
+  &.Button--small {
+    @include button-small();
+  }
+
+  &.Button--large {
+    @include button-large();
+  }
+
+  &.Button--block {
+    @include button-block();
+  }
+}
+

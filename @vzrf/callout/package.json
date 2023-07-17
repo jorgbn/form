@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/callout@^2.0.11",
+  "_id": "@vzrf/callout@2.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-rzFGMHwkjzxDvnSeahqdP68nSjw=",
+  "_location": "/@vzrf/callout",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/callout@^2.0.11",
+    "name": "@vzrf/callout",
+    "escapedName": "@vzrf%2fcallout",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/callout/-/@vzrf/callout-2.0.11.tgz",
+  "_shasum": "af3146307c248f3c43be749e6a1a9d3faf274a3c",
+  "_spec": "@vzrf/callout@^2.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Khadeeja Din"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Callout - Callouts are for content that you want to give emphasis to. Callouts give a visual separation on important snippets of content. This is especially useful for driving users toward a specific call to action.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Callout"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/callout",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.11"
+}

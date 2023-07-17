@@ -1,0 +1,58 @@
+{
+  "_from": "@vzrf/tabs@^1.0.11",
+  "_id": "@vzrf/tabs@1.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-DjSIFEzFOMdYYL9QLuxWCyiHg0Q=",
+  "_location": "/@vzrf/tabs",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/tabs@^1.0.11",
+    "name": "@vzrf/tabs",
+    "escapedName": "@vzrf%2ftabs",
+    "scope": "@vzrf",
+    "rawSpec": "^1.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^1.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/tabs/-/@vzrf/tabs-1.0.11.tgz",
+  "_shasum": "0e3488144cc538c75860bf502eec560b28878344",
+  "_spec": "@vzrf/tabs@^1.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Tabs - Switchable blocks of content. Tabs are sections of content that are revealed or hidden depending on the user's selections.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Tabs",
+    "Navigation"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/tabs",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "1.0.11"
+}

@@ -1,0 +1,21 @@
+$Theme-colors: (
+  Primary: $Theme-primary,
+  Secondary: $Theme-secondary,
+  Accent: $Theme-accent,
+  Error: $Theme-error,
+  Warning: $Theme-warning,
+  Success: $Theme-success,
+  Info: $Theme-info,
+  Error--66: $Theme-error--66,
+  Warning--66: $Theme-warning--66,
+  Success--66: $Theme-success--66,
+  Info--66: $Theme-info--66,
+  Error--33: $Theme-error--33,
+  Warning--33: $Theme-warning--33,
+  Success--33: $Theme-success--33,
+  Info--33: $Theme-info--33,
+  Gray: $Theme-color--gray,
+  Gray--1: $Theme-color--gray1,
+  Gray--3: $Theme-color--gray3,
+  Gray--10: $Theme-color--gray10
+) !default;

@@ -1,0 +1,95 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Pagination Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - General
+  - Pagination Item
+**/
+.Pagination {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  white-space: nowrap;
+  list-style-type: none;
+}
+
+.Pagination .Pagination-item {
+  text-align: center;
+  margin: 0 0.175rem;
+}
+
+.Pagination .Pagination-item a {
+  padding: 0.4375rem 0.875rem;
+  border-radius: 0;
+  text-decoration: none;
+  display: inline-block;
+  color: #000000;
+}
+
+.Pagination .Pagination-item[disabled], .Pagination .Pagination-item.is-disabled {
+  cursor: not-allowed;
+  color: #d8dada;
+}
+
+.Pagination .Pagination-item.is-active a {
+  color: #ffffff;
+  background-color: #000000;
+  border: #000000;
+}

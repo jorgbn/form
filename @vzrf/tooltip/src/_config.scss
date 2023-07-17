@@ -1,0 +1,16 @@
+/**
+  Tooltips Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - General
+
+**/
+
+// General
+$Tooltip-backgroundColor: $white !default;
+$Tooltip-textColor: $black !default;
+$Tooltip-borderColor: $black !default;
+$Tooltip-arrowBorderColor: $Tooltip-borderColor !default;
+$Tooltip-arrowBackgroundCoLor: $Tooltip-backgroundColor !default;

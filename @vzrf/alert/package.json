@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/alert@^2.0.13",
+  "_id": "@vzrf/alert@2.0.13",
+  "_inBundle": false,
+  "_integrity": "sha1-GKPTHPVmv5chHVYBu9L+x9KS6ec=",
+  "_location": "/@vzrf/alert",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/alert@^2.0.13",
+    "name": "@vzrf/alert",
+    "escapedName": "@vzrf%2falert",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.13",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.13"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/alert/-/@vzrf/alert-2.0.13.tgz",
+  "_shasum": "18a3d31cf566bf97211d5601bbd2fec7d292e9e7",
+  "_spec": "@vzrf/alert@^2.0.13",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Alert - Inline page notifications. Alerts are meant for in-page icationsve a form when a user has submitted aninput wrong. Alerts align text to the left by default to make readability easier. Text shouldbe centered only when the content is short in length and no longer than 3 lines.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Alert"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/alert",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.13"
+}

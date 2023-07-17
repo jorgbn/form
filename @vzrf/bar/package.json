@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/bar@^2.0.11",
+  "_id": "@vzrf/bar@2.0.11",
+  "_inBundle": false,
+  "_integrity": "sha1-jq7WNfihb+FOmDMqkHK6e63GolI=",
+  "_location": "/@vzrf/bar",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/bar@^2.0.11",
+    "name": "@vzrf/bar",
+    "escapedName": "@vzrf%2fbar",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.11",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.11"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/bar/-/@vzrf/bar-2.0.11.tgz",
+  "_shasum": "8eaed635f8a16fe14e98332a9072ba7badc6a252",
+  "_spec": "@vzrf/bar@^2.0.11",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Bar - Horizontal line for top of an element. Bars are horizontal lines that span the width of the parent element. If the bar is wrapped around a child element, the bar will appear above the child element. The bar's thickness can be customized.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Bar"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/bar",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.11"
+}

@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/button@^3.2.4",
+  "_id": "@vzrf/button@3.2.4",
+  "_inBundle": false,
+  "_integrity": "sha1-UIiVLHQMPpIXwh+UYFh60tb3e3k=",
+  "_location": "/@vzrf/button",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/button@^3.2.4",
+    "name": "@vzrf/button",
+    "escapedName": "@vzrf%2fbutton",
+    "scope": "@vzrf",
+    "rawSpec": "^3.2.4",
+    "saveSpec": null,
+    "fetchSpec": "^3.2.4"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/button/-/@vzrf/button-3.2.4.tgz",
+  "_shasum": "5088952c740c3e9217c21f9460587ad2d6f77b79",
+  "_spec": "@vzrf/button@^3.2.4",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Button - Clickable elements that signal user action Buttons are best used make sure that event handlers are fired correctly for accessibility. Otherwise, you will need to program the logic to handle for both click &amp; keyboard events.",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Button"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/button",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "3.2.4"
+}

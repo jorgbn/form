@@ -1,0 +1,145 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Accordion Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+**/
+.Accordion .Accordion-group {
+  margin-bottom: 0.4375rem;
+  border-top: 0.0625rem solid #000000;
+}
+
+.Accordion .Accordion-group.is-expanded {
+  border-top: 0.0625rem solid #000000;
+}
+
+.Accordion .Accordion-group.is-expanded + .Accordion-group {
+  border-top: 0.0625rem solid #000000;
+}
+
+.Accordion .Accordion-group.is-expanded .Accordion-summary .Accordion-button::after {
+  content: "-";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1;
+  height: 0.875rem;
+  width: 0.875rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Accordion .Accordion-group.is-expanded .Accordion-detail {
+  display: block;
+  padding: 0 0 1rem;
+}
+
+.Accordion .Accordion-group:first-of-type {
+  border-top: 0.25rem solid #000000;
+}
+
+.Accordion .Accordion-summary {
+  margin-top: 0.4375rem;
+}
+
+.Accordion .Accordion-summary .Accordion-button {
+  font-size: 1.5rem;
+  padding: 0.21875rem 0;
+  background: none;
+  border: 0;
+  color: #000000;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+
+.Accordion .Accordion-summary .Accordion-button::after {
+  content: "+";
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1;
+  height: 0.875rem;
+  width: 0.875rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Accordion .Accordion-summary .Accordion-button:hover {
+  color: #000000;
+}
+
+.Accordion .Accordion-detail {
+  display: none;
+}

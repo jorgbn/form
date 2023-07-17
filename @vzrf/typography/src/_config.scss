@@ -1,0 +1,116 @@
+/**
+  Tooltips Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - General
+  - Heading
+  - Links
+  - Horizontal Rule
+  - Default Lists
+  - Definition Lists
+  - Blockquote
+  - Code
+
+**/
+
+// General
+$Typography-fontFamily--url: '//respframework.verizon.com/fonts/v2/fonts.css' !default;
+$Typography-monospace: 'Inconsolata', monospace !default;
+$Typography-fontFamily--header: 'BrandFont-Display', Arial, sans-serif !default;
+$Typography-fontFamily--body: 'BrandFont-Text', Arial, sans-serif !default;
+$Typography-fontWeights: (light: 300, normal: 400, medium: 500, bold:700) !default;
+
+// Fonts
+$Typography-remSize: 16px !default;
+$Typography-fontColor: $Theme-textColor !default;
+$Typography-fontColor--alt: #ffffff !default;
+$Typography-fontSize: calculateRem(14) !default;
+$Typography-fontWeight: $Typography-fontWeights !default;
+$Typography-lineHeight: lineheight(14, 16.8) !default;
+
+// Heading
+$Typography-headings: (
+  h1:(
+    desktop-size: calculateRem(32),
+    desktop-line-height: lineheight(32, 32),
+    mobile-size: calculateRem(25),
+    mobile-line-height: lineheight(25, 24),
+    font-weight: bold,
+    font-family: $Typography-fontFamily--header
+  ),
+  h2:(
+    desktop-size: calculateRem(20),
+    desktop-line-height: lineheight(20, 19),
+    mobile-size: calculateRem(16),
+    mobile-line-height: lineheight(16, 15),
+    font-weight: bold,
+    font-family: $Typography-fontFamily--header
+  ),
+  h3:(
+    desktop-size: $Typography-fontSize,
+    desktop-line-height: lineheight(14, 14.5),
+    mobile-size: calculateRem(12),
+    mobile-line-height: lineheight(12, 12),
+    font-weight: bold,
+    font-family: $Typography-fontFamily--header
+  ),
+  h4:(
+    desktop-size: $Typography-fontSize,
+    desktop-line-height: lineheight(14, 14.5),
+    mobile-size: calculateRem(12),
+    mobile-line-height: lineheight(12, 12),
+    font-weight: bold,
+    font-family: $Typography-fontFamily--header
+  ),
+  h5:(
+    desktop-size: $Typography-fontSize,
+    desktop-line-height: lineheight(14, 14.5),
+    mobile-size: calculateRem(12),
+    mobile-line-height: lineheight(12, 12),
+    font-weight: bold,
+    font-family: $Typography-fontFamily--header
+  ),
+  h6:(
+    desktop-size: $Typography-fontSize,
+    desktop-line-height: lineheight(14, 14.5),
+    mobile-size: calculateRem(12),
+    mobile-line-height: lineheight(12, 12),
+    font-weight: normal,
+    font-family: $Typography-fontFamily--header
+  )
+) !default;
+
+// Links
+$TypographyLink-fontColor: $Theme-linkColor !default;
+$TypographyLink-fontColor--hover: $Theme-linkColor--hover !default;
+$TypographyLink-fontColor--active: $Theme-linkColor--active !default;
+$TypographyLink-transition: color 0.15s ease-out !default;
+$TypographyLink-textDecoration: $Theme-linkDecoration !default;
+
+// Horizontal Rule
+$TypographyHr-borderWidth: calculateRem(2) !default;
+$TypographyHr-borderColor: #000000 !default;
+$TypographyHr-margin: $Theme-spacer--medium !default;
+
+$TypographyHr-borderTop--primary: calculateRem(4) solid $black !default;
+$TypographyHr-borderTop--secondary: calculateRem(1) solid $black !default;
+$TypographyHr-borderTop--tertiary: calculateRem(1) solid $coolGray3 !default;
+
+// Default Lists
+$TypographyList-lineHeight: 1.2 !default;
+$TypographyList-marginBottom: 0 !default;
+$TypographyList-paddingLeft: calculateRem(16.8) !default;
+
+// Definition Lists
+$TypographyDt-marginTop: calculateRem(14) !default;
+$TypographyDt-marginBottom: 0 !default;
+$TypographyDt-fontWeight: bold !default;
+$TypographyDd-marginBottom: 0 !default;
+
+// Blockquote
+$TypographyBlockquote-borderColor: #000000 !default;
+$TypographyBlockquote-fontColor: #333333 !default;
+
+@import url(#{$Typography-fontFamily--url});

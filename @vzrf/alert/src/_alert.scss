@@ -1,0 +1,56 @@
+.Alert {
+  position: relative;
+  display: block;
+  padding: calculateRem(14);
+  box-sizing: border-box;
+  background-color: $Alert-background;
+  color: $Alert-textColor;
+  font-weight: bold;
+
+  &.Alert--success {
+    background-color: $Alert-background--success;
+    color: $Alert-textColor--success;
+  }
+
+  &.Alert--info {
+    background-color: $Alert-background--info;
+    color: $Alert-textColor--info;
+  }
+
+  &.Alert--warning {
+    background-color: $Alert-background--warning;
+    color: $Alert-textColor--warning;
+  }
+
+  &.Alert--error {
+    background-color: $Alert-background--error;
+    color: $Alert-textColor--error;
+  }
+}
+
+.Alert-close {
+  position: absolute;
+  border: 0;
+  top: calculateRem(14);
+  right: calculateRem(14);
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  margin: 0;
+
+  &:hover,
+  &:focus,
+  .is-active {
+    background: transparent;
+    outline-color: #ffffff;
+  }
+
+  &::after {
+    content: $AlertClose-content;
+    display: inline-block;
+    padding: 0;
+    background-color: transparent;
+    color: inherit;
+    font-size: calculateRem(14);
+  }
+}

@@ -1,0 +1,145 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+@import "./_functions.scss";
+
+// Imports
+
+// Color Definitions
+$black: #000000 !default;
+$white: #ffffff !default;
+$red: #d52b1e !default;
+
+$green: #00ac3e !default;
+$green66: #57C880 !default;
+$green33: #ABE4BF !default;
+
+$blue: #0088ce !default;
+$blue66: #57B1DF !default;
+$blue33: #ABD8EF !default;
+
+$yellow: #ffbc3d !default;
+$yellow66: #FFD37F !default;
+$yellow33: #FFE9BF !default;
+
+$orange: #ed7000 !default;
+$orange66: #F3A157 !default;
+$orange33: #F9D0AB !default;
+
+$coolGray1: #f6f6f6 !default;
+$coolGray3: #d8dada !default;
+$coolGray6: #747676 !default;
+$coolGray10: #333333 !default;
+
+// Theme Interface
+
+//General
+$Theme-breakpoints: (xs: '320px', sm: '544px', md: '768px', lg: '991px', xl: '1200px') !default;
+$Theme-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol' !default;
+$Theme-serif: serif !default;
+$Theme-monospace: 'SFMono-Regular', 'RobotoMono-Regular', monospace !default;
+
+$Theme-primary: $black !default;
+$Theme-secondary: $white !default;
+$Theme-accent: $red !default;
+
+$Theme-background: $white !default;
+
+$Theme-active: $orange !default;
+$Theme-active--66: $orange66 !default;
+$Theme-active--33: $orange33 !default;
+
+// Messaging Types
+$Theme-success: $green !default;
+$Theme-success--66: $green66 !default;
+$Theme-success--33: $green33 !default;
+
+$Theme-info: $blue !default;
+$Theme-info--66: $blue66 !default;
+$Theme-info--33: $blue33 !default;
+
+$Theme-warning: $yellow !default;
+$Theme-warning--66: $yellow66 !default;
+$Theme-warning--33: $yellow33 !default;
+
+$Theme-error: $orange !default;
+$Theme-error--66: $orange66 !default;
+$Theme-error--33: $orange33 !default;
+
+$Theme-textColor: $black !default;
+$Theme-textColor--success: $white !default;
+$Theme-textColor--info: $white !default;
+$Theme-textColor--warning: $black !default;
+$Theme-textColor--error: $white !default;
+
+$Theme-color--black: $black !default;
+$Theme-color--white: $white !default;
+$Theme-color--red: $red !default;
+$Theme-color--gray: $coolGray6 !default;
+$Theme-color--gray1: $coolGray1 !default;
+$Theme-color--gray3: $coolGray3 !default;
+$Theme-color--gray6: $coolGray6 !default;
+$Theme-color--gray10: $coolGray10 !default;
+
+// Disabled Colors
+$Theme-backgroundColor--disabled: $coolGray3 !default;
+$Theme-textColor--disabled: $white !default;
+$Theme--borderColor--disabled: $coolGray3 !default;
+
+// Borders
+$Theme-borderWidth: calculateRem(1) !default;
+$Theme-borderStyle: solid !default;
+$Theme-borderColor: $coolGray3 !default;
+$Theme-border: $Theme-borderWidth $Theme-borderStyle $Theme-borderColor !default;
+
+// Links
+$Theme-linkColor: $black !default;
+$Theme-linkColor--hover: $blue !default;
+$Theme-linkColor--active: $blue !default;
+$Theme-linkDecoration: underline !default;
+
+// Transitions
+$Theme-transitionDuration: 0.2s !default;
+
+//// Horizontal Rule
+//$Theme-hr--primary: calculateRem(4) solid $black !default;
+//$Theme-hr--secondary: calculateRem(1) solid $black !default;
+//$Theme-hr--tertiary: calculateRem(1) solid $coolGray3 !default;
+
+// Breakpoints
+$Theme-breakpoints: $Theme-breakpoints !default;
+
+// Spacers
+$Theme-spacer--none: 0 !default;
+$Theme-spacer--extraSmall: calculateRem(3.5) !default;
+$Theme-spacer--small: calculateRem(7) !default;
+$Theme-spacer--medium: calculateRem(14) !default;
+$Theme-spacer--large: calculateRem(21) !default;
+$Theme-spacer--extraLarge: calculateRem(28) !default;

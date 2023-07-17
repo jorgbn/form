@@ -1,0 +1,122 @@
+@charset "UTF-8";
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Alerts Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+  - Success
+  - Info
+  - Warning
+  - Error
+  - Alert close
+**/
+.Alert {
+  position: relative;
+  display: block;
+  padding: 0.875rem;
+  box-sizing: border-box;
+  background-color: #0088ce;
+  color: #ffffff;
+  font-weight: bold;
+}
+
+.Alert.Alert--success {
+  background-color: #00ac3e;
+  color: #ffffff;
+}
+
+.Alert.Alert--info {
+  background-color: #0088ce;
+  color: #ffffff;
+}
+
+.Alert.Alert--warning {
+  background-color: #ffbc3d;
+  color: #000000;
+}
+
+.Alert.Alert--error {
+  background-color: #ed7000;
+  color: #ffffff;
+}
+
+.Alert-close {
+  position: absolute;
+  border: 0;
+  top: 0.875rem;
+  right: 0.875rem;
+  padding: 0;
+  color: inherit;
+  background: transparent;
+  margin: 0;
+}
+
+.Alert-close:hover, .Alert-close:focus,
+.Alert-close .is-active {
+  background: transparent;
+  outline-color: #ffffff;
+}
+
+.Alert-close::after {
+  content: "✕";
+  display: inline-block;
+  padding: 0;
+  background-color: transparent;
+  color: inherit;
+  font-size: 0.875rem;
+}

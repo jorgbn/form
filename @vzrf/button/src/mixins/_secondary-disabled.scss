@@ -1,0 +1,11 @@
+@mixin secondary-disabled {
+  &.disabled,
+  &[disabled],
+  &.is-disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    background-color: $Button-backgroundColor--disabled;
+    color: $Button-textColor--disabled;
+    border-color: $Button-borderColor--disabled;
+  }
+}

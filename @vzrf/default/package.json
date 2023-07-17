@@ -1,0 +1,94 @@
+{
+  "_from": "@vzrf/default@^4.0.9",
+  "_id": "@vzrf/default@4.0.9",
+  "_inBundle": false,
+  "_integrity": "sha1-7ufSXYkBwdDBICa6puJP5o1ZtMM=",
+  "_location": "/@vzrf/default",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/default@^4.0.9",
+    "name": "@vzrf/default",
+    "escapedName": "@vzrf%2fdefault",
+    "scope": "@vzrf",
+    "rawSpec": "^4.0.9",
+    "saveSpec": null,
+    "fetchSpec": "^4.0.9"
+  },
+  "_requiredBy": [
+    "/@vzrf/accordion",
+    "/@vzrf/alert",
+    "/@vzrf/avatar",
+    "/@vzrf/badge",
+    "/@vzrf/bar",
+    "/@vzrf/breadcrumb",
+    "/@vzrf/button",
+    "/@vzrf/callout",
+    "/@vzrf/core",
+    "/@vzrf/dropdown",
+    "/@vzrf/form",
+    "/@vzrf/grid",
+    "/@vzrf/icon",
+    "/@vzrf/loaders",
+    "/@vzrf/modal",
+    "/@vzrf/notification",
+    "/@vzrf/pagination",
+    "/@vzrf/progress",
+    "/@vzrf/rating",
+    "/@vzrf/reset",
+    "/@vzrf/steps",
+    "/@vzrf/swiper",
+    "/@vzrf/tables",
+    "/@vzrf/tabs",
+    "/@vzrf/tag",
+    "/@vzrf/tooltip",
+    "/@vzrf/typography",
+    "/@vzrf/util-align",
+    "/@vzrf/util-colors",
+    "/@vzrf/util-display",
+    "/@vzrf/util-flexbox",
+    "/@vzrf/util-float",
+    "/@vzrf/util-opacity",
+    "/@vzrf/util-spacing",
+    "/@vzrf/util-text",
+    "/@vzrf/util-touchable",
+    "/@vzrf/util-video",
+    "/@vzrf/util-visibility"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/default/-/@vzrf/default-4.0.9.tgz",
+  "_shasum": "eee7d25d8901c1d0c12026baa6e24fe68d59b4c3",
+  "_spec": "@vzrf/default@^4.0.9",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    },
+    {
+      "name": "Edward W Baer"
+    }
+  ],
+  "deprecated": false,
+  "description": "VZRF Default variables, mixins, & functions",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Alert"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/default",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "4.0.9"
+}

@@ -1,0 +1,87 @@
+/**
+  Core Theme Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+    - functions
+    - mixins
+    - animations
+    - fonts
+    - font awesome 5
+  - Color Definitions
+  - Interface
+    - General
+    - Messaging Types
+    - Button
+    - Button State
+    - Secondary Button
+    - Secondary Button State
+    - CTA Button
+    - Borders
+    - Links
+    - Fonts
+    - Transitions
+    - Horizontal Rule
+    - Breakpoints
+    - Spacers
+
+**/
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+ * @defaults:
+ */
+/**
+ * @prop:
+ * @return: value without unit of measure
+ */
+/**
+ * @prop:
+ * @return: value in rems
+ */
+/**
+  Badges Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - Imports
+  - General
+
+**/
+.Badge {
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: normal;
+}
+
+.Badge::before, .Badge::after {
+  content: '\200B';
+  display: inline-block;
+  line-height: 0;
+  padding-top: 50%;
+  padding-bottom: 50%;
+}
+
+.Badge::before {
+  padding-left: 0.21875rem;
+}
+
+.Badge::after {
+  padding-right: 0.21875rem;
+}

@@ -1,0 +1,95 @@
+// Modal Animation
+@keyframes modal-down {
+  0% {
+    opacity: 0;
+    transform: translateY(calculateRem(-150));
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(calculateRem(0));
+  }
+}
+
+// Container for modal and overlay
+.Modal-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  &.is-active {
+    display: flex;
+  }
+}
+
+// Modal Base
+.Modal {
+  position: relative;
+  width: $Modal-width;
+  padding: calculateRem(14);
+  z-index: $Modal-zIndex;
+  overflow: hidden;
+  display: flex;
+  background-color: #ffffff;
+  animation: modal-down 0.4s ease;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+
+  // @TODO: Add ability for box-shadow
+}
+
+.Modal-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background-color: $Modal-backgroundColor--overlay;
+
+  &.is-active {
+    opacity: 1;
+    display: block;
+  }
+}
+
+// Modal Close
+.Modal-close {
+  appearance: none;
+  position: absolute;
+  top: calculateRem(14);
+  right: calculateRem(14);
+  border: 0;
+  padding: 0;
+  background: transparent;
+  color: inherit;
+
+  &:hover, &:active, &:focus {
+    background: transparent;
+    color: inherit;
+
+  }
+
+  &::after {
+    font-family: $Modal-fontFamily--close;
+    content: $Modal-content--close;
+    display: inline-block;
+    padding: 0;
+    color: inherit;
+    font-size: $Modal-fontSize--close;
+    background-color: transparent;
+  }
+}
+
+footer.Modal-footer {
+  min-height: 0;
+
+  &--confirm {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

@@ -1,0 +1,26 @@
+.Badge {
+  display: inline-block;
+  border-radius: 50%;
+  position: relative;
+  background-color: $Badge-backgroundColor;
+  color: $Badge-textColor;
+  font-size: calculateRem(12);
+  font-weight: normal;
+
+  &::before,
+  &::after {
+    content: '\200B';
+    display: inline-block;
+    line-height: 0;
+
+    padding-top: 50%;
+    padding-bottom: 50%;
+  }
+
+  &::before {
+    padding-left: calculateRem(3.5);
+  }
+  &::after {
+    padding-right: calculateRem(3.5);
+  }
+}

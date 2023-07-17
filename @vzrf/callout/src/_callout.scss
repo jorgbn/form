@@ -1,0 +1,96 @@
+.Callout {
+  position: relative;
+  padding: calculateRem(14);
+  background-color: $Callout-background;
+
+  p {
+    font-size: calculateRem(18);
+  }
+
+  &.Callout--center, &.Callout--left, &.Callout--right {
+    display: block;
+  }
+
+  &.Callout--overlay {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &::before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: $Callout-overlay;
+      z-index: 1;
+    }
+
+    &.Callout--light {
+      color: $Callout-textColor;
+
+      &::before {
+        background: $Callout-overlay--light;
+      }
+
+      .Callout-content {
+        color: $Callout-textColor;
+      }
+    }
+
+    .Callout-content {
+      position: relative;
+      color: $Callout-textColor--light;
+      z-index: 2;
+    }
+  }
+}
+
+@media screen and (min-width: $Callout-breakpoint--medium) {
+  .Callout {
+    &.Callout--center, &.Callout--left, &.Callout--right {
+      display: flex;
+
+      .Callout-content {
+        padding: calculateRem(14);
+        max-width: $Callout-contentWidth;
+        flex-basis: $Callout-contentWidth;
+      }
+    }
+
+    &.Callout--left {
+      justify-content: flex-start;
+
+      .Callout-content {
+        margin-left: calculateRem(14);
+      }
+    }
+
+    &.Callout--right {
+      justify-content: flex-end;
+
+      .Callout-content {
+        margin-right: calculateRem(14);
+      }
+    }
+
+    &.Callout--center {
+      justify-content: center;
+      text-align: center;
+
+      .Callout-content {
+        max-width: $Callout-contentWidth--full;
+        flex-basis: $Callout-contentWidth--full;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $Callout-breakpoint--large) {
+  .Callout {
+    padding: calculateRem(14);
+
+  }
+}

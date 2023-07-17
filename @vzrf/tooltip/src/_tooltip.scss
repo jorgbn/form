@@ -1,0 +1,42 @@
+.Tooltip {
+  display: none;
+  position: absolute;
+  background: $Tooltip-backgroundColor;
+  border: calculateRem(1) solid $Tooltip-borderColor;
+  color: $Tooltip-textColor;
+  padding: calculateRem(14);
+  width: calculateRem(300);
+
+  &.is-active {
+    display: block;
+  }
+
+  &.Tooltip--top, &.Tooltip--fullTop {
+    @include downArrow;
+  }
+
+  &.Tooltip--right {
+    @include leftArrow;
+  }
+
+  &.Tooltip--bottom, &.Tooltip--fullBottom {
+    @include upArrow;
+  }
+
+  &.Tooltip--left {
+    @include rightArrow;
+  }
+
+  &.Tooltip--fullTop {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+  &.Tooltip--fullBottom {
+    width: 100%;
+    left: 0;
+    right: 0;
+  }
+
+}

@@ -1,0 +1,57 @@
+{
+  "_from": "@vzrf/util-opacity@^2.0.7",
+  "_id": "@vzrf/util-opacity@2.0.7",
+  "_inBundle": false,
+  "_integrity": "sha1-/i4/7mFo2iWcfqVEzpI31bNsvjM=",
+  "_location": "/@vzrf/util-opacity",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "range",
+    "registry": true,
+    "raw": "@vzrf/util-opacity@^2.0.7",
+    "name": "@vzrf/util-opacity",
+    "escapedName": "@vzrf%2futil-opacity",
+    "scope": "@vzrf",
+    "rawSpec": "^2.0.7",
+    "saveSpec": null,
+    "fetchSpec": "^2.0.7"
+  },
+  "_requiredBy": [
+    "/@vzrf/core"
+  ],
+  "_resolved": "https://oneartifactoryprod.verizon.com/artifactory/api/npm/npm-virtual/@vzrf/util-opacity/-/@vzrf/util-opacity-2.0.7.tgz",
+  "_shasum": "fe2e3fee6168da259c7ea544ce9237d5b36cbe33",
+  "_spec": "@vzrf/util-opacity@^2.0.7",
+  "_where": "/Users/j.alvarez.mendoza/Desktop/accenture/verizon/wireless/aem-components/1D-Components/node_modules/@vzrf/core",
+  "bundleDependencies": false,
+  "contributors": [
+    {
+      "name": "Spencer Hamm"
+    },
+    {
+      "name": "Tommy Chanthaboune"
+    }
+  ],
+  "dependencies": {
+    "@vzrf/default": "^4.0.9"
+  },
+  "deprecated": false,
+  "description": "VZRF Opacity Utility",
+  "gitHead": "0d14c079fa87e2dc561dde51238d469ed024fa78",
+  "keywords": [
+    "Verizon",
+    "VZRF",
+    "CSS",
+    "Verizon Reactive Framework",
+    "Opacity Utility"
+  ],
+  "license": "UNLICENSED",
+  "main": "dist/index.css",
+  "name": "@vzrf/util-opacity",
+  "scripts": {
+    "build": "node ../../build/scss.js",
+    "build:docs": "node ../../build/documentation/build-docs.js",
+    "prepublish": "npm run build"
+  },
+  "version": "2.0.7"
+}

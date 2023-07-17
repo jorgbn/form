@@ -1,0 +1,20 @@
+/**
+  Pagination Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+
+  - General
+**/
+
+// General
+$Progress-backgroundColor: $coolGray3 !default;
+$Progress-textColor: $white !default;
+$Progress-fontSize: calculateRem(12) !default;
+$Progress-meterColor: $Theme-accent !default;
+$Progress-background--success: $Theme-success !default;
+$Progress-background--info: $Theme-info !default;
+$Progress-background--warning: $Theme-warning !default;
+$Progress-textColor--warning: $black !default;
+$Progress-background--error: $Theme-error !default;
+

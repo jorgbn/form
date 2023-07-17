@@ -1,0 +1,5 @@
+@function checkbox_error_selected() {
+  @return svg-url(
+    '<svg width="999px" height="999px" viewBox="0 0 999 999" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch --><title>checkbox-selected-error</title><desc>Created with Sketch.</desc><defs></defs><g id="checkbox-selected-error" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><rect fill="#FFFFFF" x="0" y="0" width="999" height="999"></rect><path d="M422.494634,642.014224 L719.047695,324 L732.579709,336.618808 L433.532014,657.308198 L433.324642,657.114821 L421.956631,668.092782 L265.501266,506.078508 L278.81099,493.225456 L422.494634,642.014224 Z M0,0 L999,0 L999,999 L0,999 L0,0 Z M50,50 L50,950 L950,950 L950,50 L50,50 Z" id="Combined-Shape" fill="#EC7002"></path></g></svg>'
+  )
+}

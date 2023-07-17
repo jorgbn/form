@@ -1,0 +1,79 @@
+@mixin indicator($icon) {
+  content: $icon;
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+  font-weight: 400;
+  font-size: calculateRem(14);
+  line-height: 1;
+  height: calculateRem(14);
+  width: calculateRem(14);
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Accordion {
+  .Accordion-group {
+    margin-bottom: calculateRem(7);
+    border-top: calculateRem(1) solid $Accordion-borderColor;
+
+    &.is-expanded {
+      border-top: calculateRem(1) solid $Accordion-borderColor;
+
+      & + .Accordion-group {
+        border-top: calculateRem(1) solid $Accordion-borderColor;
+      }
+
+      .Accordion-summary {
+        .Accordion-button {
+          &::after {
+            @include indicator($Accordion-content--close);
+          }
+        }
+      }
+      .Accordion-detail {
+        display: block;
+        padding: calculateRem(0 0 16);
+      }
+    }
+
+    &:first-of-type {
+      border-top: calculateRem(4) solid $Accordion-borderColor;
+    }
+
+  }
+
+  .Accordion-summary {
+    margin-top: calculateRem(7);
+
+    .Accordion-button {
+      font-size: calculateRem(24);
+      padding: calculateRem(3.5 0);
+      background: none;
+      border: 0;
+      color: $Accordion-fontColor;
+      cursor: pointer;
+      display: block;
+      width: 100%;
+      position: relative;
+      text-align: left;
+
+      &::after {
+        @include indicator($Accordion-content--open);
+      }
+
+      &:hover {
+        color: $Accordion-fontColor;
+      }
+    }
+  }
+
+  .Accordion-detail {
+    display: none;
+  }
+}

@@ -1,0 +1,65 @@
+/**
+  Buttons Configuration File.
+
+  Naming Convention:
+  $Namespace-propertyDescription--modifier
+  - Mixins
+  - Imports
+  - General
+  - Primary Disabled
+  - Secondary
+  - Secondary Disabled
+  - CTA
+
+**/
+
+// General
+$Button-padding: 1em (1em * 3.14) !default;
+$Button-fontSize: calculateRem(14) !default;
+$Button-borderRadius: calculateRem(9999) !default;
+
+// Primary
+$Button-backgroundColor: $black !default;
+$Button-textColor: $white !default;
+$Button-borderColor: $black !default;
+
+// Primary Active
+$Button-backgroundColor--active: $black !default;
+$Button-textColor--active: $white !default;
+$Button-borderColor--active: $black !default;
+
+// Secondary
+$Button-backgroundColor--secondary: $white !default;
+$Button-textColor--secondary: $black !default;
+$Button-borderColor--secondary: $black !default;
+
+// Secondary Active
+$Button-backgroundColor--secondaryActive: $white !default;
+$Button-textColor--secondaryActive: $black !default;
+$Button-borderColor--secondaryActive: $black !default;
+
+// CTA
+$Button-backgroundColor--cta: transparent !default;
+$Button-textColor--cta: $black !default;
+$Button-caretTextColor--cta: $black !default;
+
+// Disabled
+$Button-backgroundColor--disabled: $Theme-backgroundColor--disabled !default;
+$Button-textColor--disabled: $Theme-textColor--disabled !default;
+$Button-borderColor--disabled: $Theme--borderColor--disabled !default;
+$Button-borderColor--disabledCTA: $Theme-backgroundColor--disabled !default;
+
+// States
+$Button-success: $Theme-success !default;
+$Button-info: $Theme-info !default;
+$Button-error: $Theme-error !default;
+$Button-warning: $Theme-warning !default;
+
+$Button-success--active: $Theme-success !default;
+$Button-info--active: $Theme-info !default;
+$Button-error--active: $Theme-error !default;
+$Button-warning--active: $Theme-warning !default;
+
+// Size
+$Button-font-size--large: calculateRem(16) !default;
+$Button-font-size--small: calculateRem(11) !default;

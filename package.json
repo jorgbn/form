@@ -1,0 +1,42 @@
+{
+    "name": "VZRFStarter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "webpack.mix.js",
+    "scripts": {
+        "clean": "rm -rf node_modules/ hot mix-manifest.json",
+        "dev": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "watch": "npm run development -- --watch",
+        "server": "cross-env NODE_ENV=development & webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "prod": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+        "copy": "cp -r ./dist/* ../vzwcom/ui.apps/src/main/content/jcr_root/apps/vzwcom/components/vzrf/clientlibs/clientlib-base/",
+        "prod-copy": "npm run prod && npm run copy"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "browserslist": [
+        "> .01%",
+        "last 2 versions",
+        "IE 11",
+        "iOS >= 10"
+    ],
+    "devDependencies": {
+        "browser-sync": "^2.26.7",
+        "browser-sync-webpack-plugin": "^2.0.1",
+        "cross-env": "^7.0.0",
+        "jquery": "^3.4.1",
+        "laravel-mix": "^5.0.1",
+        "laravel-mix-polyfill": "^2.0.0",
+        "postcss-sorting": "^5.0.1",
+        "resolve-url-loader": "^3.1.0",
+        "sass": "^1.26.0",
+        "sass-loader": "^8.0.2",
+        "slick-carousel": "^1.8.1",
+        "vue-template-compiler": "^2.6.11"
+    },
+    "dependencies": {
+        "focus-visible": "^5.0.2",
+        "lozad": "^1.14.0"
+    }
+}
